@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plano de Estudos 2026 — Guilherme</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #080810;
+  --s1: #10101c;
+  --s2: #17172a;
+  --s3: #1e1e33;
+  --border: #28283f;
+  --gold: #f0c040;
+  --gold2: #ffd97d;
+  --blue: #5b8fff;
+  --red: #ff6b6b;
+  --teal: #4ecdc4;
+  --purple: #c084fc;
+  --green: #4ade80;
+  --orange: #fb923c;
+  --text: #e8e8f2;
+  --muted: #6868a0;
+  --muted2: #9090b8;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { background:var(--bg); color:var(--text); font-family:'DM Sans',sans-serif; font-size:14px; line-height:1.6; }
+
+/* ── HERO ── */
+.hero {
+  min-height: 280px;
+  padding: 56px 48px 48px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+.hero-bg {
+  position:absolute; inset:0;
+  background: radial-gradient(ellipse 60% 80% at 80% 20%, rgba(91,143,255,0.09) 0%, transparent 60%),
+              radial-gradient(ellipse 40% 60% at 10% 80%, rgba(240,192,64,0.07) 0%, transparent 60%);
+  pointer-events:none;
+}
+.hero-grid {
+  position:absolute; inset:0;
+  background-image: linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events:none;
+}
+.hero-label {
+  font-family:'Syne',sans-serif;
+  font-size:10px; font-weight:700;
+  letter-spacing:4px; text-transform:uppercase;
+  color:var(--gold); margin-bottom:14px;
+  display:flex; align-items:center; gap:8px;
+}
+.hero-label::before { content:''; width:24px; height:1px; background:var(--gold); }
+.hero h1 {
+  font-family:'Syne',sans-serif;
+  font-size:clamp(36px,6vw,64px);
+  font-weight:800; line-height:1.05;
+  margin-bottom:8px;
+}
+.hero h1 em { color:var(--gold); font-style:normal; }
+.hero-sub { color:var(--muted2); font-size:14px; margin-bottom:36px; max-width:500px; }
+.hero-pills { display:flex; gap:10px; flex-wrap:wrap; }
+.pill {
+  font-size:11px; font-weight:600; letter-spacing:0.5px;
+  padding:5px 14px; border-radius:20px;
+  border:1px solid; white-space:nowrap;
+}
+.pill-gold { border-color:rgba(240,192,64,0.4); color:var(--gold); background:rgba(240,192,64,0.08); }
+.pill-blue { border-color:rgba(91,143,255,0.4); color:var(--blue); background:rgba(91,143,255,0.08); }
+.pill-green { border-color:rgba(74,222,128,0.4); color:var(--green); background:rgba(74,222,128,0.08); }
+.pill-red { border-color:rgba(255,107,107,0.3); color:var(--red); background:rgba(255,107,107,0.06); }
+
+/* ── NAV ── */
+.nav {
+  position:sticky; top:0; z-index:100;
+  background:rgba(8,8,16,0.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+  padding:0 48px;
+  display:flex; gap:0; overflow-x:auto;
+}
+.nav a {
+  font-family:'Syne',sans-serif;
+  font-size:11px; font-weight:600;
+  letter-spacing:2px; text-transform:uppercase;
+  color:var(--muted); text-decoration:none;
+  padding:14px 18px;
+  border-bottom:2px solid transparent;
+  white-space:nowrap;
+  transition:color .2s, border-color .2s;
+}
+.nav a:hover { color:var(--gold); border-color:var(--gold); }
+
+/* ── LAYOUT ── */
+.container { max-width:1000px; margin:0 auto; padding:48px 48px; }
+@media(max-width:680px){ .container{ padding:32px 20px; } .hero{ padding:40px 20px 36px; } .nav{ padding:0 20px; } }
+
+/* ── SECTION HEADER ── */
+.sec {
+  font-family:'Syne',sans-serif;
+  font-size:10px; font-weight:700;
+  letter-spacing:4px; text-transform:uppercase;
+  color:var(--gold); margin-bottom:24px;
+  display:flex; align-items:center; gap:12px;
+}
+.sec::after { content:''; flex:1; height:1px; background:var(--border); }
+
+/* ── DIAG ── */
+.diag-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px; margin-bottom:56px; }
+.dcard {
+  background:var(--s1); border:1px solid var(--border);
+  border-radius:12px; padding:18px 16px;
+  position:relative; overflow:hidden;
+}
+.dcard::after { content:''; position:absolute; top:0; left:0; right:0; height:2px; }
+.dcard.forte::after { background:var(--green); }
+.dcard.medio::after { background:var(--gold); }
+.dcard.fraco::after { background:var(--red); }
+.dcard-area { font-family:'Syne',sans-serif; font-size:12px; font-weight:700; margin-bottom:6px; }
+.dcard-tag {
+  font-size:9px; font-weight:700; letter-spacing:1px; text-transform:uppercase;
+  padding:2px 8px; border-radius:10px; display:inline-block; margin-bottom:8px;
+}
+.forte .dcard-tag { background:rgba(74,222,128,0.15); color:var(--green); }
+.medio .dcard-tag { background:rgba(240,192,64,0.15); color:var(--gold); }
+.fraco .dcard-tag { background:rgba(255,107,107,0.15); color:var(--red); }
+.dcard-note { font-size:11px; color:var(--muted); line-height:1.4; }
+.bar { margin-top:10px; height:3px; background:var(--border); border-radius:3px; overflow:hidden; }
+.bar-in { height:100%; border-radius:3px; }
+.forte .bar-in { background:var(--green); width:75%; }
+.medio .bar-in { background:var(--gold); width:52%; }
+.fraco .bar-in { background:var(--red); width:28%; }
+
+/* ── META ── */
+.meta-box {
+  background: linear-gradient(135deg, rgba(240,192,64,0.06), rgba(91,143,255,0.04));
+  border:1px solid rgba(240,192,64,0.18);
+  border-radius:16px; padding:28px 32px; margin-bottom:56px;
+}
+.meta-box p { color:var(--muted2); font-size:13px; margin-bottom:20px; }
+.meta-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:16px; }
+.meta-item { text-align:center; }
+.meta-num { font-family:'Syne',sans-serif; font-size:30px; font-weight:800; color:var(--gold); }
+.meta-area { font-size:11px; color:var(--muted); margin-top:2px; }
+
+/* ── CADERNO ── */
+.caderno-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-bottom:56px; }
+.div-card {
+  background:var(--s1); border:1px solid var(--border);
+  border-radius:10px; padding:14px 16px;
+  display:flex; align-items:flex-start; gap:12px;
+}
+.div-num {
+  font-family:'Syne',sans-serif; font-size:13px; font-weight:800;
+  min-width:28px; height:28px; border-radius:6px;
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0;
+}
+.div-mat .div-num { background:rgba(91,143,255,0.2); color:var(--blue); }
+.div-port .div-num { background:rgba(192,132,252,0.2); color:var(--purple); }
+.div-red .div-num { background:rgba(240,192,64,0.2); color:var(--gold); }
+.div-hum .div-num { background:rgba(255,107,107,0.2); color:var(--red); }
+.div-nat .div-num { background:rgba(74,222,128,0.2); color:var(--green); }
+.div-gen .div-num { background:rgba(120,120,160,0.2); color:var(--muted2); }
+.div-info h5 { font-family:'Syne',sans-serif; font-size:12px; font-weight:700; margin-bottom:2px; }
+.div-info p { font-size:11px; color:var(--muted); line-height:1.3; }
+
+/* ── PHASE BLOCK ── */
+.phase {
+  border:1px solid var(--border); border-radius:16px;
+  overflow:hidden; margin-bottom:32px;
+}
+.phase-head {
+  padding:18px 24px;
+  display:flex; align-items:center; gap:14px;
+  border-bottom:1px solid var(--border);
+}
+.phase-badge {
+  font-family:'Syne',sans-serif; font-size:9px; font-weight:700;
+  letter-spacing:2px; text-transform:uppercase;
+  padding:5px 12px; border-radius:20px;
+}
+.ph1 .phase-badge { background:rgba(255,107,107,0.15); color:var(--red); }
+.ph2 .phase-badge { background:rgba(240,192,64,0.15); color:var(--gold); }
+.ph3 .phase-badge { background:rgba(74,222,128,0.15); color:var(--green); }
+.phase-head h3 { font-family:'Syne',sans-serif; font-size:17px; font-weight:700; }
+.phase-head p { font-size:12px; color:var(--muted); margin-top:1px; }
+.phase-body { padding:20px; display:flex; flex-direction:column; gap:16px; }
+
+/* ── WEEK ── */
+.week {
+  background:var(--s1); border:1px solid var(--border);
+  border-radius:12px; overflow:hidden;
+}
+.week-head {
+  padding:12px 18px;
+  display:flex; justify-content:space-between; align-items:center;
+  background:var(--s2); border-bottom:1px solid var(--border);
+}
+.week-title { font-family:'Syne',sans-serif; font-size:13px; font-weight:700; }
+.week-dates { font-size:11px; color:var(--muted); }
+.days { display:grid; grid-template-columns:repeat(7,1fr); }
+.day {
+  padding:12px 10px;
+  border-right:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  min-height:110px;
+}
+.day:last-child { border-right:none; }
+.day.wknd { background:rgba(240,192,64,0.02); }
+.day.enem-day { background:rgba(240,192,64,0.07); }
+.day-name {
+  font-size:9px; font-weight:700; letter-spacing:1.5px;
+  text-transform:uppercase; color:var(--muted);
+  margin-bottom:7px;
+}
+.tag {
+  font-size:8px; font-weight:700; letter-spacing:0.5px;
+  text-transform:uppercase; padding:2px 6px; border-radius:8px;
+  display:inline-block; margin-bottom:5px;
+}
+.t-mat { background:rgba(91,143,255,0.2); color:var(--blue); }
+.t-port { background:rgba(192,132,252,0.2); color:var(--purple); }
+.t-red { background:rgba(240,192,64,0.2); color:var(--gold); }
+.t-eng { background:rgba(78,205,196,0.2); color:var(--teal); }
+.t-hum { background:rgba(255,107,107,0.2); color:var(--red); }
+.t-nat { background:rgba(74,222,128,0.2); color:var(--green); }
+.t-rev { background:rgba(120,120,160,0.2); color:var(--muted2); }
+.t-sim { background:rgba(240,192,64,0.3); color:var(--gold); }
+.t-cs  { background:rgba(251,146,60,0.2); color:var(--orange); }
+.day-subj { font-size:11px; font-weight:500; color:var(--text); margin-bottom:3px; line-height:1.3; }
+.day-topic { font-size:10px; color:var(--muted); line-height:1.35; }
+.day-time {
+  font-size:9px; font-weight:700; letter-spacing:0.5px;
+  color:var(--muted); margin-top:6px;
+  display:flex; align-items:center; gap:3px;
+}
+.day-time::before { content:'🕐'; font-size:9px; }
+.day-cs {
+  margin-top:8px; padding-top:8px;
+  border-top:1px dashed var(--border);
+}
+.day-cs .tag { margin-bottom:3px; }
+
+/* ── FONTE CARDS ── */
+.fonte-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin-bottom:56px; }
+.fonte-card {
+  background:var(--s1); border:1px solid var(--border);
+  border-radius:12px; padding:18px;
+}
+.fonte-area {
+  font-family:'Syne',sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:1px; text-transform:uppercase;
+  margin-bottom:10px; padding-bottom:8px;
+  border-bottom:1px solid var(--border);
+}
+.fonte-area.c-mat { color:var(--blue); }
+.fonte-area.c-port { color:var(--purple); }
+.fonte-area.c-red { color:var(--gold); }
+.fonte-area.c-eng { color:var(--teal); }
+.fonte-area.c-hum { color:var(--red); }
+.fonte-area.c-nat { color:var(--green); }
+.fonte-area.c-cs  { color:var(--orange); }
+.fonte-card ul { list-style:none; display:flex; flex-direction:column; gap:6px; }
+.fonte-card ul li { font-size:12px; color:var(--muted2); padding-left:14px; position:relative; line-height:1.4; }
+.fonte-card ul li::before { content:'→'; position:absolute; left:0; color:var(--gold); font-size:10px; }
+.fonte-card ul li strong { color:var(--text); font-weight:500; }
+
+/* ── REDAÇÃO ── */
+.red-box {
+  background:var(--s1); border:1px solid var(--border);
+  border-radius:16px; padding:28px 32px; margin-bottom:56px;
+}
+.red-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:14px; margin:20px 0; }
+.red-part {
+  background:var(--s2); border-radius:10px; padding:16px;
+  border-left:3px solid;
+}
+.red-part:nth-child(1){ border-color:var(--blue); }
+.red-part:nth-child(2){ border-color:var(--purple); }
+.red-part:nth-child(3){ border-color:var(--purple); }
+.red-part:nth-child(4){ border-color:var(--teal); }
+.red-part h5 { font-family:'Syne',sans-serif; font-size:12px; font-weight:700; margin-bottom:6px; }
+.red-part p { font-size:11px; color:var(--muted2); line-height:1.5; }
+.formula {
+  background:rgba(240,192,64,0.05); border:1px solid rgba(240,192,64,0.2);
+  border-radius:10px; padding:14px 18px; margin-top:12px;
+  font-size:12px; color:var(--text); line-height:1.7;
+}
+.formula strong { color:var(--gold); }
+.formula2 {
+  background:rgba(91,143,255,0.05); border:1px solid rgba(91,143,255,0.2);
+  border-radius:10px; padding:14px 18px; margin-top:10px;
+  font-size:12px; color:var(--text); line-height:1.7;
+}
+.formula2 strong { color:var(--blue); }
+
+/* ── MACETES ── */
+.mac-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:14px; margin-bottom:56px; }
+.mac-card {
+  background:var(--s1); border:1px solid var(--border);
+  border-radius:12px; padding:18px;
+}
+.mac-card h4 { font-family:'Syne',sans-serif; font-size:13px; font-weight:700; color:var(--gold); margin-bottom:8px; }
+.mac-card p { font-size:12px; color:var(--muted2); line-height:1.5; }
+.mac-card code {
+  display:block; margin-top:10px;
+  background:var(--s2); border:1px solid var(--border);
+  border-radius:6px; padding:8px 12px;
+  font-family:'DM Sans',monospace; font-size:12px; color:var(--teal);
+}
+
+/* ── ALERT ── */
+.alert {
+  background:rgba(255,107,107,0.06); border:1px solid rgba(255,107,107,0.2);
+  border-radius:12px; padding:18px 22px; margin-bottom:32px;
+  font-size:13px; color:var(--text); line-height:1.7;
+}
+.alert strong { color:var(--red); }
+
+/* ── CS BLOCK ── */
+.cs-block {
+  background: linear-gradient(135deg, rgba(251,146,60,0.06), rgba(91,143,255,0.04));
+  border:1px solid rgba(251,146,60,0.2);
+  border-radius:16px; overflow:hidden; margin-bottom:56px;
+}
+.cs-head {
+  padding:18px 24px; border-bottom:1px solid rgba(251,146,60,0.15);
+  display:flex; align-items:center; gap:14px;
+}
+.cs-badge {
+  font-family:'Syne',sans-serif; font-size:9px; font-weight:700;
+  letter-spacing:2px; text-transform:uppercase;
+  padding:5px 12px; border-radius:20px;
+  background:rgba(251,146,60,0.15); color:var(--orange);
+}
+.cs-head h3 { font-family:'Syne',sans-serif; font-size:17px; font-weight:700; }
+.cs-head p { font-size:12px; color:var(--muted); margin-top:1px; }
+.cs-body { padding:20px; }
+.cs-mat-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; }
+.cs-mat {
+  background:var(--s1); border:1px solid var(--border);
+  border-radius:12px; padding:16px;
+}
+.cs-mat h5 { font-family:'Syne',sans-serif; font-size:12px; font-weight:700; color:var(--orange); margin-bottom:6px; }
+.cs-mat p { font-size:11px; color:var(--muted2); line-height:1.4; margin-bottom:8px; }
+.cs-mat .weeks-tag {
+  font-size:10px; color:var(--muted); 
+  padding:3px 8px; background:var(--s2); border-radius:6px;
+  display:inline-block;
+}
+
+/* ── FOOTER ── */
+.footer {
+  border-top:1px solid var(--border); padding:28px 48px;
+  text-align:center; color:var(--muted); font-size:12px;
+}
+
+@media(max-width:600px){
+  .days { grid-template-columns:repeat(2,1fr); }
+  .day { min-height:auto; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-label">Plano de Estudos Personalizado 2026</div>
+  <h1>ENEM 2026<br><em>Guilherme</em></h1>
+  <p class="hero-sub">Início: 03/06/2026 · ENEM Dia 1: 08/11 · Dia 2: 15/11 · Meta: 690–700+ com cota L2 · SI EACH USP</p>
+  <div class="hero-pills">
+    <span class="pill pill-gold">23 semanas · ~299h ENEM</span>
+    <span class="pill pill-blue">13h/semana</span>
+    <span class="pill pill-green">Cota L2 · escola pública</span>
+    <span class="pill pill-red">CS Anhanguera — 1º sem</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#diagnostico">Diagnóstico</a>
+  <a href="#metas">Metas</a>
+  <a href="#caderno">Caderno</a>
+  <a href="#cronograma">Cronograma</a>
+  <a href="#redacao">Redação</a>
+  <a href="#macetes">Macetes</a>
+  <a href="#fontes">Fontes</a>
+  <a href="#facul">Faculdade</a>
+</nav>
+
+<div class="container">
+
+<!-- DIAGNÓSTICO -->
+<div id="diagnostico"></div>
+<div class="sec">Diagnóstico inicial</div>
+<div class="diag-grid">
+  <div class="dcard forte">
+    <div class="dcard-area">Humanas</div>
+    <span class="dcard-tag">Ponto forte</span>
+    <p class="dcard-note">Acertou sem dificuldade. Só manter com revisão leve.</p>
+    <div class="bar"><div class="bar-in"></div></div>
+  </div>
+  <div class="dcard medio">
+    <div class="dcard-area">Redação</div>
+    <span class="dcard-tag">Potencial alto</span>
+    <p class="dcard-note">Argumentação boa. Precisa dominar a estrutura dissertativa.</p>
+    <div class="bar"><div class="bar-in"></div></div>
+  </div>
+  <div class="dcard fraco">
+    <div class="dcard-area">Matemática</div>
+    <span class="dcard-tag">Lacunas reais</span>
+    <p class="dcard-note">Acertou % e descontos. Funções e Bhaskara faltam.</p>
+    <div class="bar"><div class="bar-in"></div></div>
+  </div>
+  <div class="dcard fraco">
+    <div class="dcard-area">Português</div>
+    <span class="dcard-tag">Lacunas reais</span>
+    <p class="dcard-note">Errou conectivos e crase. Precisa atenção em gramática.</p>
+    <div class="bar"><div class="bar-in"></div></div>
+  </div>
+  <div class="dcard fraco">
+    <div class="dcard-area">Inglês</div>
+    <span class="dcard-tag">Base existe</span>
+    <p class="dcard-note">Confundiu 2nd e 3rd conditional. Retorno rápido com prática.</p>
+    <div class="bar"><div class="bar-in"></div></div>
+  </div>
+  <div class="dcard fraco">
+    <div class="dcard-area">Natureza</div>
+    <span class="dcard-tag">Base fraca</span>
+    <p class="dcard-note">Física cinemática sem base. Química e Bio a construir.</p>
+    <div class="bar"><div class="bar-in"></div></div>
+  </div>
+</div>
+
+<!-- METAS -->
+<div id="metas"></div>
+<div class="sec">Metas por área</div>
+<div class="meta-box">
+  <p>Para média 690–700, Matemática e Redação são os maiores alavancadores. Humanas já está encaminhada — não perca tempo excessivo aqui.</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="meta-num">720</div><div class="meta-area">Matemática</div></div>
+    <div class="meta-item"><div class="meta-num">680</div><div class="meta-area">Linguagens + Inglês</div></div>
+    <div class="meta-item"><div class="meta-num">720</div><div class="meta-area">Redação</div></div>
+    <div class="meta-item"><div class="meta-num">700</div><div class="meta-area">Humanas</div></div>
+    <div class="meta-item"><div class="meta-num">650</div><div class="meta-area">Natureza</div></div>
+  </div>
+</div>
+
+<!-- CADERNO -->
+<div id="caderno"></div>
+<div class="sec">Organização do caderno — 15 divisórias</div>
+<div class="caderno-grid">
+  <div class="div-card div-mat"><div class="div-num">D1</div><div class="div-info"><h5>Álgebra</h5><p>Equações, funções, progressões, porcentagem</p></div></div>
+  <div class="div-card div-mat"><div class="div-num">D2</div><div class="div-info"><h5>Geometria</h5><p>Plana, espacial, trigonometria</p></div></div>
+  <div class="div-card div-mat"><div class="div-num">D3</div><div class="div-info"><h5>Estatística e Prob.</h5><p>Análise combinatória, probabilidade, gráficos</p></div></div>
+  <div class="div-card div-port"><div class="div-num">D4</div><div class="div-info"><h5>Português</h5><p>Gramática, interpretação, literatura, conectivos</p></div></div>
+  <div class="div-card div-port"><div class="div-num">D5</div><div class="div-info"><h5>Inglês</h5><p>Tempos verbais, vocabulário, inferência contextual</p></div></div>
+  <div class="div-card div-red"><div class="div-num">D6</div><div class="div-info"><h5>Estrutura Redação</h5><p>Fórmulas de intro, desenvolvimento e conclusão</p></div></div>
+  <div class="div-card div-red"><div class="div-num">D7</div><div class="div-info"><h5>Repertório</h5><p>Filósofos, dados estatísticos, citações úteis</p></div></div>
+  <div class="div-card div-red"><div class="div-num">D8</div><div class="div-info"><h5>Rascunhos</h5><p>Redações completas cronometradas</p></div></div>
+  <div class="div-card div-hum"><div class="div-num">D9</div><div class="div-info"><h5>História do Brasil</h5><p>República, Vargas, Ditadura, Redemocratização</p></div></div>
+  <div class="div-card div-hum"><div class="div-num">D10</div><div class="div-info"><h5>História Mundial</h5><p>2ª Guerra, Guerra Fria, Globalização, Geopolítica</p></div></div>
+  <div class="div-card div-hum"><div class="div-num">D11</div><div class="div-info"><h5>Geo + Fil + Socio</h5><p>Brasil, globalização, Iluminismo, capitalismo</p></div></div>
+  <div class="div-card div-nat"><div class="div-num">D12</div><div class="div-info"><h5>Física</h5><p>Cinemática, energia, eletricidade, óptica</p></div></div>
+  <div class="div-card div-nat"><div class="div-num">D13</div><div class="div-info"><h5>Química</h5><p>Tabela periódica, reações, ácido-base, mol</p></div></div>
+  <div class="div-card div-nat"><div class="div-num">D14</div><div class="div-info"><h5>Biologia</h5><p>Genética, ecologia, evolução, corpo humano</p></div></div>
+  <div class="div-card div-gen"><div class="div-num">D15</div><div class="div-info"><h5>Erros frequentes</h5><p>Questões erradas de todas as áreas — material de reta final</p></div></div>
+</div>
+
+<!-- CRONOGRAMA -->
+<div id="cronograma"></div>
+<div class="sec">Cronograma — Fase 1: Base (Semanas 1–8)</div>
+<div style="color:var(--muted2);font-size:13px;margin-bottom:20px;">03 Jun → 28 Jul · Construção de fundamentos sem atalhos · <strong style="color:var(--text)">🟠 = Faculdade CS nos dias indicados</strong></div>
+
+<div class="phase ph1">
+  <div class="phase-head">
+    <span class="phase-badge">Fase 1</span>
+    <div><h3>Construção de base</h3><p>Semanas 1–8 · 03 Jun → 28 Jul</p></div>
+  </div>
+  <div class="phase-body">
+
+    <!-- S1 -->
+    <div class="week">
+      <div class="week-head"><span class="week-title">Semana 1</span><span class="week-dates">03–09 Jun</span></div>
+      <div class="days">
+        <div class="day">
+          <div class="day-name">Ter 03</div>
+          <span class="tag t-mat">Mat</span>
+          <div class="day-subj">Porcentagem e Proporção</div>
+          <div class="day-topic">Revisão de % · Regra de três simples · Exercícios</div>
+          <div class="day-time">16h30–18h30</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Sistemas Operacionais — Introdução</div><div class="day-time">19h30–20h10</div></div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qua 04</div>
+          <span class="tag t-port">Port</span>
+          <div class="day-subj">Interpretação de texto</div>
+          <div class="day-topic">Leitura ativa · Identificar tese e argumentos</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qui 05</div>
+          <span class="tag t-mat">Mat</span>
+          <div class="day-subj">Equações 1º grau</div>
+          <div class="day-topic">Montagem de equações · Resolução por problemas</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Sex 06</div>
+          <span class="tag t-red">Red</span>
+          <div class="day-subj">Estrutura dissertativa</div>
+          <div class="day-topic">Introdução · Tese · Como apresentar o problema</div>
+          <div class="day-time">16h30–18h30</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">SO — Processos e threads</div><div class="day-time">19h30–20h10</div></div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Sáb 07</div>
+          <span class="tag t-eng">Eng</span>
+          <div class="day-subj">Tempos verbais básicos</div>
+          <div class="day-topic">Present, Past, Future Simple · Exemplos reais</div>
+          <div class="day-time">09h00–11h00</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">SO — Gerenciamento de memória</div><div class="day-time">11h30–12h10</div></div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Dom 08</div>
+          <span class="tag t-hum">Hum</span>
+          <div class="day-subj">Brasil República</div>
+          <div class="day-topic">Proclamação → Era Vargas · Linha do tempo visual</div>
+          <div class="day-time">09h00–11h00</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">SO — Sistema de arquivos</div><div class="day-time">11h30–12h10</div></div>
+        </div>
+        <div class="day">
+          <div class="day-name">Seg 09</div>
+          <span class="tag t-rev">Rev</span>
+          <div class="day-subj">Revisão da semana</div>
+          <div class="day-topic">Refazer 5 questões de Mat · Revisar anotações</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- S2 -->
+    <div class="week">
+      <div class="week-head"><span class="week-title">Semana 2</span><span class="week-dates">10–16 Jun</span></div>
+      <div class="days">
+        <div class="day">
+          <div class="day-name">Ter 10</div>
+          <span class="tag t-mat">Mat</span>
+          <div class="day-subj">Equações 2º grau</div>
+          <div class="day-topic">Bhaskara · Discriminante · Natureza das raízes</div>
+          <div class="day-time">16h30–18h30</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">SO — Escalonamento de processos</div><div class="day-time">19h30–20h10</div></div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qua 11</div>
+          <span class="tag t-port">Port</span>
+          <div class="day-subj">Conectivos e coesão</div>
+          <div class="day-topic">Mas, portanto, entretanto, embora · Uso correto</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qui 12</div>
+          <span class="tag t-mat">Mat</span>
+          <div class="day-subj">Funções do 1º grau</div>
+          <div class="day-topic">Gráfico · Coeficientes · Crescente e decrescente</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Sex 13</div>
+          <span class="tag t-red">Red</span>
+          <div class="day-subj">Desenvolvimento</div>
+          <div class="day-topic">Argumento + dado/exemplo + análise · Praticar</div>
+          <div class="day-time">16h30–18h30</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Arquitetura — CPU e memória</div><div class="day-time">19h30–20h10</div></div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Sáb 14</div>
+          <span class="tag t-red">Red</span>
+          <div class="day-subj">1ª Redação completa</div>
+          <div class="day-topic">Tema livre · Cronometrar 1h · Foco na estrutura</div>
+          <div class="day-time">09h00–11h00</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Arquitetura — Barramento e I/O</div><div class="day-time">11h30–12h10</div></div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Dom 15</div>
+          <span class="tag t-hum">Hum</span>
+          <div class="day-subj">Ditadura e Redemocratização</div>
+          <div class="day-topic">1964–1985 · Constituição 88 · Diretas Já</div>
+          <div class="day-time">09h00–11h00</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Arquitetura — Pipeline e cache</div><div class="day-time">11h30–12h10</div></div>
+        </div>
+        <div class="day">
+          <div class="day-name">Seg 16</div>
+          <span class="tag t-eng">Eng</span>
+          <div class="day-subj">Conditionals</div>
+          <div class="day-topic">1st, 2nd e 3rd conditional · Diferença prática</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- S3 -->
+    <div class="week">
+      <div class="week-head"><span class="week-title">Semana 3</span><span class="week-dates">17–23 Jun</span></div>
+      <div class="days">
+        <div class="day">
+          <div class="day-name">Ter 17</div>
+          <span class="tag t-mat">Mat</span>
+          <div class="day-subj">Funções do 2º grau</div>
+          <div class="day-topic">Parábola · Vértice · Máximo e mínimo</div>
+          <div class="day-time">16h30–18h30</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Redes — Modelo OSI e TCP/IP</div><div class="day-time">19h30–20h10</div></div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qua 18</div>
+          <span class="tag t-port">Port</span>
+          <div class="day-subj">Crase</div>
+          <div class="day-topic">Regras fundamentais · Casos de uso e não uso</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qui 19</div>
+          <span class="tag t-nat">Nat</span>
+          <div class="day-subj">Física — Cinemática</div>
+          <div class="day-topic">MRU · MRUV · Fórmulas · Lançamento vertical</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Sex 20</div>
+          <span class="tag t-red">Red</span>
+          <div class="day-subj">Proposta de intervenção</div>
+          <div class="day-topic">5 elementos: Agente · Ação · Modo · Fim · Efeito</div>
+          <div class="day-time">16h30–18h30</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Redes — Protocolos HTTP, DNS, FTP</div><div class="day-time">19h30–20h10</div></div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Sáb 21</div>
+          <span class="tag t-mat">Mat</span>
+          <div class="day-subj">10 questões ENEM reais</div>
+          <div class="day-topic">Bhaskara + funções · Provas 2019–2023 · Gabarito depois</div>
+          <div class="day-time">09h00–11h00</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Redes — Roteamento e switches</div><div class="day-time">11h30–12h10</div></div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Dom 22</div>
+          <span class="tag t-hum">Hum</span>
+          <div class="day-subj">Geografia Brasil</div>
+          <div class="day-topic">Regiões · Desigualdade regional · Urbanização</div>
+          <div class="day-time">09h00–11h00</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Redes — Segurança básica e firewall</div><div class="day-time">11h30–12h10</div></div>
+        </div>
+        <div class="day">
+          <div class="day-name">Seg 23</div>
+          <span class="tag t-rev">Rev</span>
+          <div class="day-subj">Revisão semanas 1–3</div>
+          <div class="day-topic">Rever erros · D15 do caderno · Anotar padrões</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- S4 -->
+    <div class="week">
+      <div class="week-head"><span class="week-title">Semana 4</span><span class="week-dates">24–30 Jun</span></div>
+      <div class="days">
+        <div class="day">
+          <div class="day-name">Ter 24</div>
+          <span class="tag t-mat">Mat</span>
+          <div class="day-subj">Geometria plana</div>
+          <div class="day-topic">Área: triângulo, quadrado, círculo · Perímetro</div>
+          <div class="day-time">16h30–18h30</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Cinemática básica</div><div class="day-time">19h30–20h10</div></div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qua 25</div>
+          <span class="tag t-port">Port</span>
+          <div class="day-subj">Concordância verbal</div>
+          <div class="day-topic">Casos especiais · Sujeito composto · Coletivos</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qui 26</div>
+          <span class="tag t-nat">Nat</span>
+          <div class="day-subj">Física — Energia</div>
+          <div class="day-topic">Trabalho · Energia cinética e potencial · Conservação</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Sex 27</div>
+          <span class="tag t-red">Red</span>
+          <div class="day-subj">Redação completa</div>
+          <div class="day-topic">Tema: desigualdade social · 1h cronometrada · Revisar proposta</div>
+          <div class="day-time">16h30–18h30</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Dinâmica e forças</div><div class="day-time">19h30–20h10</div></div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Sáb 28</div>
+          <span class="tag t-nat">Nat</span>
+          <div class="day-subj">Química básica</div>
+          <div class="day-topic">Tabela periódica · Ligações químicas · Mol</div>
+          <div class="day-time">09h00–11h00</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Trabalho e energia</div><div class="day-time">11h30–12h10</div></div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Dom 29</div>
+          <span class="tag t-hum">Hum</span>
+          <div class="day-subj">Filosofia e Sociologia</div>
+          <div class="day-topic">Iluminismo · Contrato Social · Capitalismo · Marx básico</div>
+          <div class="day-time">09h00–11h00</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Termodinâmica básica</div><div class="day-time">11h30–12h10</div></div>
+        </div>
+        <div class="day">
+          <div class="day-name">Seg 30</div>
+          <span class="tag t-mat">Mat</span>
+          <div class="day-subj">Geometria espacial</div>
+          <div class="day-topic">Cubo, cilindro, cone, esfera · Volume e área</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- S5-8 resumida -->
+    <div class="week">
+      <div class="week-head"><span class="week-title">Semanas 5–8</span><span class="week-dates">01 Jul → 28 Jul · Padrão se mantém · CS encerra na semana 8</span></div>
+      <div class="days">
+        <div class="day">
+          <div class="day-name">Ter</div>
+          <span class="tag t-mat">Mat</span>
+          <div class="day-subj">S5: Trigonometria</div>
+          <div class="day-topic">Seno, cosseno, tangente · Triângulo retângulo</div>
+          <div class="day-time">16h30–18h30</div>
+          <div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Eletricidade</div><div class="day-time">19h30–20h10</div></div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qua</div>
+          <span class="tag t-port">Port</span>
+          <div class="day-subj">S5: Concordância nominal</div>
+          <div class="day-topic">Adjetivos · Artigos · Numerais · Casos especiais</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qui</div>
+          <span class="tag t-nat">Nat</span>
+          <div class="day-subj">S6: Química — reações</div>
+          <div class="day-topic">Ácido-base · Oxidação-redução · pH</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Sex</div>
+          <span class="tag t-red">Red</span>
+          <div class="day-subj">S6–8: 1 redação/semana</div>
+          <div class="day-topic">Temas variados · Cronometrar sempre · Revisar proposta</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Sáb</div>
+          <span class="tag t-mat">Mat</span>
+          <div class="day-subj">S7: Probabilidade</div>
+          <div class="day-topic">Análise combinatória · Fatorial · Prob. simples</div>
+          <div class="day-time">09h00–11h00</div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Dom</div>
+          <span class="tag t-hum">Hum</span>
+          <div class="day-subj">S8: História Mundial</div>
+          <div class="day-topic">2ª Guerra · Guerra Fria · Globalização · Blocos</div>
+          <div class="day-time">09h00–11h00</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Seg</div>
+          <span class="tag t-rev">Rev</span>
+          <div class="day-subj">Revisão semanal</div>
+          <div class="day-topic">D15: anotar todos os erros · Padrões frequentes</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FASE 2 -->
+<div class="sec">Cronograma — Fase 2: Conteúdo ENEM (Semanas 9–16)</div>
+<div style="color:var(--muted2);font-size:13px;margin-bottom:20px;">29 Jul → 28 Set · Foco nos temas mais recorrentes · Exercícios com provas reais</div>
+
+<div class="phase ph2">
+  <div class="phase-head">
+    <span class="phase-badge">Fase 2</span>
+    <div><h3>Conteúdo ENEM + Exercícios</h3><p>Semanas 9–16 · 29 Jul → 28 Set</p></div>
+  </div>
+  <div class="phase-body">
+    <div class="week">
+      <div class="week-head"><span class="week-title">Semanas 9–12</span><span class="week-dates">29 Jul → 25 Ago</span></div>
+      <div class="days">
+        <div class="day">
+          <div class="day-name">Ter</div>
+          <span class="tag t-mat">Mat</span>
+          <div class="day-subj">Progressões PA e PG</div>
+          <div class="day-topic">Fórmulas de termo e soma · Questões ENEM reais</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qua</div>
+          <span class="tag t-port">Port</span>
+          <div class="day-subj">Figuras de linguagem</div>
+          <div class="day-topic">Metáfora · Ironia · Eufemismo · Hipérbole</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qui</div>
+          <span class="tag t-nat">Nat</span>
+          <div class="day-subj">Biologia — Genética</div>
+          <div class="day-topic">DNA · Herança mendeliana · Dominância · Cruzamentos</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Sex</div>
+          <span class="tag t-red">Red</span>
+          <div class="day-subj">Redação cronometrada</div>
+          <div class="day-topic">1h exata · Tema atual · Revisar proposta de intervenção</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Sáb</div>
+          <span class="tag t-mat">Mat</span>
+          <div class="day-subj">15 questões ENEM reais</div>
+          <div class="day-topic">Provas 2020–2024 · Anotar dúvidas · Ver gabarito depois</div>
+          <div class="day-time">09h00–11h00</div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Dom</div>
+          <span class="tag t-hum">Hum</span>
+          <div class="day-subj">Atualidades</div>
+          <div class="day-topic">Notícias recentes · Temas sociais · Questões ambientais</div>
+          <div class="day-time">09h00–11h00</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Seg</div>
+          <span class="tag t-eng">Eng</span>
+          <div class="day-subj">Leitura de textos reais</div>
+          <div class="day-topic">BBC, The Guardian · Inferência sem traduzir tudo</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="week">
+      <div class="week-head"><span class="week-title">Semanas 13–16</span><span class="week-dates">26 Ago → 28 Set</span></div>
+      <div class="days">
+        <div class="day">
+          <div class="day-name">Ter</div>
+          <span class="tag t-mat">Mat</span>
+          <div class="day-subj">Estatística básica</div>
+          <div class="day-topic">Média · Mediana · Moda · Leitura de gráficos</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qua</div>
+          <span class="tag t-port">Port</span>
+          <div class="day-subj">Literatura brasileira</div>
+          <div class="day-topic">Modernismo · Realismo · Principais autores ENEM</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qui</div>
+          <span class="tag t-nat">Nat</span>
+          <div class="day-subj">Ecologia e meio ambiente</div>
+          <div class="day-topic">Cadeias alimentares · Biomas · Aquecimento global</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Sex</div>
+          <span class="tag t-nat">Nat</span>
+          <div class="day-subj">Física — Eletricidade</div>
+          <div class="day-topic">Circuitos · Resistência · Lei de Ohm · Potência</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Sáb</div>
+          <span class="tag t-sim">Simulado</span>
+          <div class="day-subj">Simulado parcial</div>
+          <div class="day-topic">20 questões mistas + 1 redação · Marcar tempo</div>
+          <div class="day-time">09h00–11h00</div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Dom</div>
+          <span class="tag t-hum">Hum</span>
+          <div class="day-subj">Geopolítica atual</div>
+          <div class="day-topic">Conflitos globais · Blocos econômicos · BRICS · ONU</div>
+          <div class="day-time">09h00–11h00</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Seg</div>
+          <span class="tag t-red">Red</span>
+          <div class="day-subj">Repertório sociocultural</div>
+          <div class="day-topic">Construir banco de dados · Filósofos · Dados estatísticos</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FASE 3 -->
+<div class="sec">Cronograma — Fase 3: Simulados e Reta Final (Semanas 17–23)</div>
+<div style="color:var(--muted2);font-size:13px;margin-bottom:20px;">29 Set → 07 Nov · Sem conteúdo novo — só prática e revisão de erros</div>
+
+<div class="phase ph3">
+  <div class="phase-head">
+    <span class="phase-badge">Fase 3</span>
+    <div><h3>Simulados e Reta Final</h3><p>Semanas 17–23 · 29 Set → 07 Nov</p></div>
+  </div>
+  <div class="phase-body">
+    <div class="week">
+      <div class="week-head"><span class="week-title">Semanas 17–20</span><span class="week-dates">29 Set → 26 Out</span></div>
+      <div class="days">
+        <div class="day">
+          <div class="day-name">Ter</div>
+          <span class="tag t-rev">Rev</span>
+          <div class="day-subj">Revisão de erros</div>
+          <div class="day-topic">Questões erradas do simulado anterior · D15 do caderno</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qua</div>
+          <span class="tag t-mat">Mat</span>
+          <div class="day-subj">Reforço nos pontos fracos</div>
+          <div class="day-topic">3 tipos de questão que mais erra → focar só nisso</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qui</div>
+          <span class="tag t-red">Red</span>
+          <div class="day-subj">Redação cronometrada</div>
+          <div class="day-topic">Temas dos últimos 5 anos do ENEM · 1h exata</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Sex</div>
+          <span class="tag t-port">Port</span>
+          <div class="day-subj">Revisão de gramática</div>
+          <div class="day-topic">Crase · Concordância · Regência · Pontuação</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Sáb</div>
+          <span class="tag t-sim">Simulado</span>
+          <div class="day-subj">Simulado completo</div>
+          <div class="day-topic">Prova ENEM real com cronômetro · Condições reais</div>
+          <div class="day-time">09h00–11h00</div>
+        </div>
+        <div class="day wknd">
+          <div class="day-name">Dom</div>
+          <span class="tag t-rev">Rev</span>
+          <div class="day-subj">Correção do simulado</div>
+          <div class="day-topic">Analisar cada erro · Entender o porquê · Anotar padrões</div>
+          <div class="day-time">09h00–11h00</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Seg</div>
+          <span class="tag t-hum">Hum</span>
+          <div class="day-subj">Revisão de Humanas</div>
+          <div class="day-topic">Linha do tempo · Geopolítica · Atualidades recentes</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="week">
+      <div class="week-head"><span class="week-title">Semanas 21–22 — Reta final</span><span class="week-dates">27 Out → 09 Nov</span></div>
+      <div class="days">
+        <div class="day">
+          <div class="day-name">Ter</div>
+          <span class="tag t-rev">Rev</span>
+          <div class="day-subj">Revisão leve</div>
+          <div class="day-topic">Só rever anotações do caderno · Nada novo</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qua</div>
+          <span class="tag t-mat">Mat</span>
+          <div class="day-subj">Fórmulas-chave</div>
+          <div class="day-topic">Bhaskara · Geometria · Física · Probabilidade</div>
+          <div class="day-time">21h00–22h00</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Qui</div>
+          <span class="tag t-red">Red</span>
+          <div class="day-subj">Reler melhores redações</div>
+          <div class="day-topic">Internalizar estrutura · Revisar banco de repertório</div>
+          <div class="day-time">16h30–18h30</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Sex 07</div>
+          <span class="tag t-rev">Rev</span>
+          <div class="day-subj">Logística da prova</div>
+          <div class="day-topic">Confirmar local · Separar documentos · Dormir cedo</div>
+          <div class="day-time">16h30–17h30</div>
+        </div>
+        <div class="day enem-day">
+          <div class="day-name">Sáb 08/11</div>
+          <span class="tag t-sim">ENEM DIA 1</span>
+          <div class="day-subj" style="color:var(--gold)">Linguagens · Humanas · Redação</div>
+          <div class="day-topic">Chegue 30min antes · Leia a redação com calma · Não deixe em branco</div>
+        </div>
+        <div class="day">
+          <div class="day-name">Dom 09</div>
+          <span class="tag t-rev">Rev</span>
+          <div class="day-subj">Descanso total</div>
+          <div class="day-topic">Sem estudar · Relaxar · Preparar para o Dia 2</div>
+        </div>
+        <div class="day enem-day">
+          <div class="day-name">Sáb 15/11</div>
+          <span class="tag t-sim">ENEM DIA 2</span>
+          <div class="day-subj" style="color:var(--gold)">Matemática · Natureza</div>
+          <div class="day-topic">Começar pela mais fácil · Gerir tempo por questão</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- REDAÇÃO -->
+<div id="redacao"></div>
+<div class="sec">Guia completo de redação</div>
+<div class="red-box">
+  <h3 style="font-family:'Syne',sans-serif;font-size:19px;font-weight:700;margin-bottom:6px;">Estrutura dissertativo-argumentativa</h3>
+  <p style="color:var(--muted2);font-size:13px;">5 competências avaliadas. Dominar a estrutura vale pelo menos 600 pontos garantidos.</p>
+  <div class="red-grid">
+    <div class="red-part"><h5>Introdução (7–10 linhas)</h5><p>Contextualize com dado, citação ou fato histórico. Termine com a tese — sua posição clara sobre o problema.</p></div>
+    <div class="red-part"><h5>Desenvolvimento 1 (10–12 linhas)</h5><p>1 argumento + 1 dado concreto + análise mostrando como isso confirma sua tese. Nunca só afirmar.</p></div>
+    <div class="red-part"><h5>Desenvolvimento 2 (10–12 linhas)</h5><p>2º argumento diferente. Pode abordar causa ou consequência distinta. Mesmo esquema: arg + exemplo + análise.</p></div>
+    <div class="red-part"><h5>Conclusão (7–10 linhas)</h5><p>Retome a tese de forma diferente. Proposta de intervenção com os 5 elementos obrigatórios.</p></div>
+  </div>
+  <div class="formula">
+    <strong>Fórmula da proposta de intervenção:</strong><br>
+    "Cabe ao [AGENTE — governo, escola, família], por meio de [AÇÃO — políticas públicas, campanhas, legislação], [MODO — como será feito], a fim de [FINALIDADE — objetivo], promovendo assim [EFEITO — resultado esperado na sociedade]."
+  </div>
+  <div class="formula2">
+    <strong>Fórmula da introdução:</strong><br>
+    "[DADO/CONTEXTO histórico, estatístico ou cultural] revela que [PROBLEMA]. Nesse sentido, [TESE — sua posição sobre como enfrentar o problema]."
+  </div>
+</div>
+
+<!-- MACETES -->
+<div id="macetes"></div>
+<div class="sec">Macetes essenciais</div>
+<div class="mac-grid">
+  <div class="mac-card">
+    <h4>🔢 Bhaskara — nunca esquecer</h4>
+    <p>Toda equação do 2º grau cai no ENEM. Memorize a fórmula e o discriminante antes de tudo.</p>
+    <code>x = (−b ± √Δ) / 2a · Δ = b² − 4ac</code>
+  </div>
+  <div class="mac-card">
+    <h4>📐 Geometria — áreas principais</h4>
+    <p>Triângulo = base × altura ÷ 2. Círculo = π × r². Trapézio = (B+b) × h ÷ 2. Cole esses num lugar visível.</p>
+    <code>Triângulo: b×h/2 · Círculo: πr²</code>
+  </div>
+  <div class="mac-card">
+    <h4>⚡ Física — altura máxima</h4>
+    <p>Lançamento vertical: na altura máxima, velocidade final = 0. Use v² = v₀² − 2gh e isole h.</p>
+    <code>h = v₀² / 2g</code>
+  </div>
+  <div class="mac-card">
+    <h4>📝 Crase — regra rápida</h4>
+    <p>Substitua por "ao". Se couber "ao" no masculino, cabe crase no feminino. "Fui à escola" → "fui ao colégio" ✅</p>
+  </div>
+  <div class="mac-card">
+    <h4>🔗 Conectivos — mapa rápido</h4>
+    <p>Oposição: mas, porém, contudo, entretanto. Conclusão: logo, portanto, assim. Causa: porque, pois, visto que.</p>
+  </div>
+  <div class="mac-card">
+    <h4>🌍 Inglês — inferência ENEM</h4>
+    <p>Leia o enunciado em português primeiro, depois busque no texto a informação específica. Contexto resolve 80%.</p>
+  </div>
+  <div class="mac-card">
+    <h4>📊 Probabilidade</h4>
+    <p>P = casos favoráveis ÷ casos totais. Eventos independentes: multiplica. Eventos excludentes: soma.</p>
+    <code>P(A) = n(A) / n(Ω)</code>
+  </div>
+  <div class="mac-card">
+    <h4>✍️ Repertório de redação</h4>
+    <p>Monte um banco com 5 filósofos (Rousseau, Kant, Foucault, Bourdieu, Gramsci) e 5 dados de temas sociais. Use 1 por desenvolvimento.</p>
+  </div>
+</div>
+
+<!-- FONTES -->
+<div id="fontes"></div>
+<div class="sec">Fontes por área — todas gratuitas</div>
+<div class="fonte-grid">
+  <div class="fonte-card">
+    <div class="fonte-area c-mat">Matemática</div>
+    <ul>
+      <li><strong>Khan Academy</strong> — do zero ao avançado, excelente para cada tópico</li>
+      <li><strong>Provas ENEM INEP</strong> — inep.gov.br, provas desde 2009</li>
+      <li><strong>Me Salva!</strong> — videoaulas por tópico, bem didático</li>
+      <li><strong>Matemática Rio (YouTube)</strong> — exercícios resolvidos passo a passo</li>
+    </ul>
+  </div>
+  <div class="fonte-card">
+    <div class="fonte-area c-port">Português</div>
+    <ul>
+      <li><strong>Descomplica</strong> — gramática e interpretação por tema</li>
+      <li><strong>Português com Letícia (YouTube)</strong> — crase, concordância, regência</li>
+      <li><strong>Provas ENEM reais</strong> — melhor treino de interpretação</li>
+      <li><strong>Norma Culta (site)</strong> — dúvidas pontuais de gramática</li>
+    </ul>
+  </div>
+  <div class="fonte-card">
+    <div class="fonte-area c-red">Redação</div>
+    <ul>
+      <li><strong>Redação Nota 1000 (site)</strong> — banco de redações com análise</li>
+      <li><strong>Brasil Escola — Redação</strong> — estrutura e temas comentados</li>
+      <li><strong>Politize!</strong> — repertório sociocultural e atualidades</li>
+      <li><strong>Correção manual</strong> — peça para alguém de confiança avaliar</li>
+    </ul>
+  </div>
+  <div class="fonte-card">
+    <div class="fonte-area c-eng">Inglês</div>
+    <ul>
+      <li><strong>BBC Learning English</strong> — textos reais com áudio</li>
+      <li><strong>Duolingo</strong> — 10min/dia para vocabulário e gramática</li>
+      <li><strong>Provas ENEM reais</strong> — inglês do ENEM é sempre inferência</li>
+      <li><strong>English with Lucy (YouTube)</strong> — gramática de forma clara</li>
+    </ul>
+  </div>
+  <div class="fonte-card">
+    <div class="fonte-area c-hum">Humanas</div>
+    <ul>
+      <li><strong>Descomplica</strong> — história e geografia por tema</li>
+      <li><strong>Politize!</strong> — geopolítica e atualidades acessíveis</li>
+      <li><strong>Canal do Nerdologia (YouTube)</strong> — história contextualizada</li>
+      <li><strong>Provas ENEM reais</strong> — Humanas é muito interpretativa</li>
+    </ul>
+  </div>
+  <div class="fonte-card">
+    <div class="fonte-area c-nat">Natureza</div>
+    <ul>
+      <li><strong>Me Salva!</strong> — Física e Química bem organizados</li>
+      <li><strong>Khan Academy Física</strong> — cinemática e energia do zero</li>
+      <li><strong>Física e Vestibular (YouTube)</strong> — fórmulas e exemplos</li>
+      <li><strong>Biologia Total (YouTube)</strong> — genética e ecologia</li>
+    </ul>
+  </div>
+</div>
+
+<!-- FACULDADE CS -->
+<div id="facul"></div>
+<div class="sec">Faculdade — CS Anhanguera 1º Semestre</div>
+<div class="cs-block">
+  <div class="cs-head">
+    <span class="cs-badge">Faculdade CS</span>
+    <div>
+      <h3>Ciência da Computação — 1º Semestre</h3>
+      <p>Jun–Jul · 40min por sessão · Ter, Sex, Sáb e Dom · Apoio ao curso, não foco principal</p>
+    </div>
+  </div>
+  <div class="cs-body">
+    <div class="cs-mat-grid">
+      <div class="cs-mat">
+        <h5>Sistemas Operacionais</h5>
+        <p>Processos, threads, memória, sistema de arquivos, escalonamento. Base para entender qualquer ambiente computacional.</p>
+        <p><strong style="color:var(--text);font-size:11px;">Fonte:</strong> <span style="color:var(--muted2);font-size:11px;">Neso Academy (YouTube) · GeeksforGeeks resumos</span></p>
+        <span class="weeks-tag">Semanas 1–2 · Ter e Sex</span>
+      </div>
+      <div class="cs-mat">
+        <h5>Arquitetura e Organização</h5>
+        <p>CPU, memória, barramento, pipeline, cache, I/O. Entender como o hardware funciona debaixo do software.</p>
+        <p><strong style="color:var(--text);font-size:11px;">Fonte:</strong> <span style="color:var(--muted2);font-size:11px;">Rodrigo Penna (YouTube) · Patterson & Hennessy resumido</span></p>
+        <span class="weeks-tag">Semanas 3–4 · Ter e Sex</span>
+      </div>
+      <div class="cs-mat">
+        <h5>Redes de Computadores</h5>
+        <p>Modelo OSI, TCP/IP, protocolos HTTP/DNS/FTP, roteamento, segurança básica.</p>
+        <p><strong style="color:var(--text);font-size:11px;">Fonte:</strong> <span style="color:var(--muted2);font-size:11px;">Curso em Vídeo — Redes (Guanabara) · Computerphile (YouTube)</span></p>
+        <span class="weeks-tag">Semanas 5–6 · Ter e Sex</span>
+      </div>
+      <div class="cs-mat">
+        <h5>Física Geral</h5>
+        <p>Cinemática, dinâmica, trabalho, energia, termodinâmica básica, eletricidade. Coincide com conteúdo do ENEM — aproveite.</p>
+        <p><strong style="color:var(--text);font-size:11px;">Fonte:</strong> <span style="color:var(--muted2);font-size:11px;">Khan Academy Física · Física e Vestibular (YouTube)</span></p>
+        <span class="weeks-tag">Semanas 7–8 · Ter e Sex</span>
+      </div>
+    </div>
+    <div style="margin-top:16px; padding:14px 18px; background:rgba(251,146,60,0.05); border:1px solid rgba(251,146,60,0.15); border-radius:10px; font-size:12px; color:var(--muted2); line-height:1.6;">
+      <strong style="color:var(--orange);">Nota:</strong> Física Geral da faculdade se sobrepõe diretamente ao conteúdo de Natureza do ENEM. Use o mesmo material para os dois — não estude em separado. Isso economiza tempo e reforça ambos simultaneamente.
+    </div>
+  </div>
+</div>
+
+<!-- ALERTA -->
+<div class="alert">
+  <strong>Aviso real:</strong> Este plano funciona se você cumprir pelo menos 75% das semanas. Semanas perdidas por estágio ou imprevistos são normais — o problema é abandonar por 2–3 semanas seguidas. Se isso acontecer, não recomece do zero: pegue de onde parou e compense no fim de semana seguinte. A D15 do caderno é seu material mais valioso na reta final — não negligencie anotar os erros.
+</div>
+
+</div>
+
+<div class="footer">
+  Plano montado em 02/06/2026 · Início: 03/06/2026 · ENEM: 08 e 15 de novembro de 2026 · Meta: 690–700+ · Cota L2 · SI EACH USP
+</div>
+
+</body>
+</html>

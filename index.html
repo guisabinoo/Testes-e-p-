@@ -167,17 +167,19 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 <div class="hero-bg"></div><div class="hero-grid"></div>
 <div class="hero-label">Plano de Estudos Personalizado 2026</div>
 <h1>ENEM 2026<br><em>Guilherme</em></h1>
-<p class="hero-sub">Início: Qua 03/06/2026 · ENEM Dia 1: Sáb 08/11 · Dia 2: Sáb 15/11 · Meta: 720+ com cota L2 · SI EACH USP</p>
+<p class="hero-sub">Início: Ter 09/06/2026 · ENEM Dia 1: Sáb 08/11 · Dia 2: Sáb 15/11 · Meta: 760+ com cota EP-L1 · SI EACH USP</p>
 <div class="hero-pills">
-<span class="pill pill-gold">23 semanas · ~299h ENEM</span>
-<span class="pill pill-blue">13h/semana</span>
-<span class="pill pill-green">Cota L2 · escola pública</span>
-<span class="pill pill-red">Meta: 720+ · SI EACH noturno</span>
+<span class="pill pill-gold">22 semanas · Meta: 400h+ ENEM</span>
+<span class="pill pill-blue">~18h a 21h/semana (+30min)</span>
+<span class="pill pill-green">Cota EP-L1 · escola pública</span>
+<span class="pill pill-red">Meta: 760+ · SI EACH noturno</span>
 </div>
 </div>
 
 <div class="stats-bar">
 <div class="stat-item"><div class="stat-num" id="st-done">0</div><div class="stat-label">Dias concluídos</div></div>
+<div class="stat-div"></div>
+<div class="stat-item"><div class="stat-num" id="st-hours" style="color:var(--blue)">0h</div><div class="stat-label">Horas Cumpridas</div></div>
 <div class="stat-div"></div>
 <div class="stat-item"><div class="stat-num" id="st-pct">0%</div><div class="stat-label">Progresso geral</div></div>
 <div class="stat-div"></div>
@@ -202,7 +204,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 <div class="fid-div"></div>
 <div class="fid-item"><div class="fid-num fid-o" id="fid-pend">0</div><div class="fid-label">⏳ Pendente</div></div>
 <div class="fid-div"></div>
-<div style="font-size:11px;color:var(--muted);max-width:240px;line-height:1.5;">Marque ✓ no dia ou antes = <span style="color:var(--green)">ponto positivo</span>. Marcar após a data = <span style="color:var(--red)">atraso</span>. Salvo automaticamente.</div>
+<div style="font-size:11px;color:var(--muted);max-width:240px;line-height:1.5;">Marque ✓ no dia ou antes = <span style="color:var(--green)">ponto positivo</span>. Marcar após a data = <span style="color:var(--red)">atraso</span>. Cada check soma carga horária.</div>
 </div>
 
 <nav class="nav">
@@ -217,21 +219,21 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 <div class="sec">Diagnóstico inicial</div>
 <div class="diag-grid">
 <div class="dcard forte"><div class="dcard-area">Humanas</div><span class="dcard-tag">Ponto forte</span><p class="dcard-note">Acertou sem dificuldade. Manter com revisão leve.</p><div class="bar"><div class="bar-in"></div></div></div>
-<div class="dcard medio"><div class="dcard-area">Redação</div><span class="dcard-tag">Potencial alto</span><p class="dcard-note">Argumentação boa. Precisa dominar a estrutura.</p><div class="bar"><div class="bar-in"></div></div></div>
-<div class="dcard fraco"><div class="dcard-area">Matemática</div><span class="dcard-tag">Lacunas reais</span><p class="dcard-note">Acertou % e descontos. Funções e Bhaskara faltam.</p><div class="bar"><div class="bar-in"></div></div></div>
+<div class="dcard medio"><div class="dcard-area">Redação</div><span class="dcard-tag">Foco principal</span><p class="dcard-note">Carga horária alavancada para blindar os 900+ de pontuação EP-L1.</p><div class="bar"><div class="bar-in"></div></div></div>
+<div class="dcard fraco"><div class="dcard-area">Matemática</div><span class="dcard-tag">Maior Ganho</span><p class="dcard-note">Os +30 min diários vão direto para a base matemática rumo a 800+.</p><div class="bar"><div class="bar-in"></div></div></div>
 <div class="dcard fraco"><div class="dcard-area">Português</div><span class="dcard-tag">Lacunas reais</span><p class="dcard-note">Errou conectivos e crase. Gramática precisa atenção.</p><div class="bar"><div class="bar-in"></div></div></div>
 <div class="dcard fraco"><div class="dcard-area">Inglês</div><span class="dcard-tag">Base existe</span><p class="dcard-note">Confundiu 2nd e 3rd conditional. Retorno rápido.</p><div class="bar"><div class="bar-in"></div></div></div>
 <div class="dcard fraco"><div class="dcard-area">Natureza</div><span class="dcard-tag">Base fraca</span><p class="dcard-note">Física cinemática sem base. Química a construir.</p><div class="bar"><div class="bar-in"></div></div></div>
 </div>
 
 <div id="metas"></div>
-<div class="sec">Metas por área — dados reais ENEM USP 2025</div>
+<div class="sec">Metas por área — Dados oficiais ENEM USP 2026 (EP-L1)</div>
 <div class="meta-box">
-<p>Dados oficiais ENEM USP 2025 (2ª chamada): SI EACH Noturno PPI-L2 exigiu <strong style="color:var(--text)">719,43</strong> e Matutino <strong style="color:var(--text)">727,44</strong>. Meta segura: <strong style="color:var(--gold)">720+</strong>.</p>
+<p>Dados oficiais ENEM USP da cota EP-L1 para SI EACH Noturno indicam histórico em <strong style="color:var(--text)">~747 pontos</strong>. Para aprovação sem depender de lista de rodada, a meta focada em Matemática e Redação é: <strong style="color:var(--gold)">760+</strong>.</p>
 <div class="meta-grid">
-<div class="meta-item"><div class="meta-num">740</div><div class="meta-area">Matemática</div></div>
-<div class="meta-item"><div class="meta-num">700</div><div class="meta-area">Linguagens + Inglês</div></div>
-<div class="meta-item"><div class="meta-num">740</div><div class="meta-area">Redação</div></div>
+<div class="meta-item"><div class="meta-num">800</div><div class="meta-area">Matemática</div></div>
+<div class="meta-item"><div class="meta-num">680</div><div class="meta-area">Linguagens + Inglês</div></div>
+<div class="meta-item"><div class="meta-num">900</div><div class="meta-area">Redação</div></div>
 <div class="meta-item"><div class="meta-num">720</div><div class="meta-area">Humanas</div></div>
 <div class="meta-item"><div class="meta-num">680</div><div class="meta-area">Natureza</div></div>
 </div>
@@ -259,716 +261,716 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 
 <div id="crono"></div>
 <div class="sec">Cronograma — Fase 1: Base (Semanas 1–8)</div>
-<p style="color:var(--muted2);font-size:13px;margin-bottom:16px;">03 Jun → 28 Jul · Construção de fundamentos · <strong style="color:var(--orange)">🟠 = Faculdade CS</strong> · Clique ✓ para marcar dia concluído</p>
+<p style="color:var(--muted2);font-size:13px;margin-bottom:16px;">09 Jun → 03 Ago · Construção de fundamentos · <strong style="color:var(--orange)">🟠 = Faculdade CS</strong> · Clique ✓ para somar as horas</p>
 <div class="phase ph1" id="ph1">
-<div class="phase-head"><span class="phase-badge">Fase 1</span><div><h3>Construção de base</h3><p>S1–8 · Qua 03/Jun → Ter 28/Jul</p></div></div>
+<div class="phase-head"><span class="phase-badge">Fase 1</span><div><h3>Construção de base</h3><p>S1–8 · Ter 09/Jun → Seg 03/Ago</p></div></div>
 <div class="phase-prog-bar-wrap"><span class="pp-label">Progresso fase 1</span><div class="pp-bar"><div class="pp-fill" id="ppf1" style="width:0%"></div></div><span class="pp-pct" id="ppp1">0%</span></div>
 <div class="phase-body">
 <div class="week">
 <div class="week-head">
 <span class="week-title">Semana 1</span>
 <span class="week-prog" id="wp-1">0/7</span>
-<span class="week-dates">Qua 03/Jun → Ter 09/Jun</span>
+<span class="week-dates">Ter 09/Jun → Seg 15/Jun</span>
 </div>
-<div class="days"><div class="day" id="day-2026-06-03">
-<div class="day-name">Qua <span class="dn">03/06</span></div>
+<div class="days"><div class="day" id="day-2026-06-09">
+<div class="day-name">Ter <span class="dn">09/06</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Porcentagem e Proporção</div>
-<div class="day-topic">Revisão de % · Regra de três · Exercícios</div>
-<div class="day-time">21h00–22h00</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">SO — Introdução</div><div class="day-time">19h30–20h10</div></div><button class="check-btn" onclick="tc('2026-06-03',1)">✓</button>
-</div><div class="day" id="day-2026-06-04">
-<div class="day-name">Qui <span class="dn">04/06</span></div>
+<div class="day-topic">Revisão de % · Regra de três · Exercícios focados (+30m)</div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">SO — Introdução</div><div class="day-time">0.5h</div></div><button class="check-btn" onclick="tc('2026-06-09',1,2.5)">✓</button>
+</div><div class="day" id="day-2026-06-10">
+<div class="day-name">Qua <span class="dn">10/06</span></div>
 <span class="tag t-port">Port</span>
 <div class="day-subj">Interpretação de texto</div>
 <div class="day-topic">Leitura ativa · Identificar tese e argumentos</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-06-04',1)">✓</button>
-</div><div class="day" id="day-2026-06-05">
-<div class="day-name">Sex <span class="dn">05/06</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-06-10',1,2.5)">✓</button>
+</div><div class="day" id="day-2026-06-11">
+<div class="day-name">Qui <span class="dn">11/06</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Equações 1º grau</div>
-<div class="day-topic">Montagem de equações · Resolução por problemas</div>
-<div class="day-time">16h30–18h30</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">SO — Processos e threads</div><div class="day-time">19h30–20h10</div></div><button class="check-btn" onclick="tc('2026-06-05',1)">✓</button>
-</div><div class="day wknd" id="day-2026-06-06">
-<div class="day-name">Sáb <span class="dn">06/06</span></div>
-<span class="tag t-red">Red</span>
-<div class="day-subj">Estrutura dissertativa</div>
-<div class="day-topic">Introdução · Tese · Como apresentar o problema</div>
-<div class="day-time">09h00–11h00</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">SO — Gerenciamento memória</div><div class="day-time">11h30–12h10</div></div><button class="check-btn" onclick="tc('2026-06-06',1)">✓</button>
-</div><div class="day wknd" id="day-2026-06-07">
-<div class="day-name">Dom <span class="dn">07/06</span></div>
-<span class="tag t-hum">Hum</span>
-<div class="day-subj">Brasil República</div>
-<div class="day-topic">Proclamação → Era Vargas · Linha do tempo</div>
-<div class="day-time">09h00–11h00</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">SO — Sistema de arquivos</div><div class="day-time">11h30–12h10</div></div><button class="check-btn" onclick="tc('2026-06-07',1)">✓</button>
-</div><div class="day" id="day-2026-06-08">
-<div class="day-name">Seg <span class="dn">08/06</span></div>
+<div class="day-topic">Montagem de equações · Resolução por problemas (+30m)</div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">SO — Processos e threads</div><div class="day-time">0.5h</div></div><button class="check-btn" onclick="tc('2026-06-11',1,2.5)">✓</button>
+</div><div class="day" id="day-2026-06-12">
+<div class="day-name">Sex <span class="dn">12/06</span></div>
 <span class="tag t-eng">Eng</span>
 <div class="day-subj">Tempos verbais básicos</div>
 <div class="day-topic">Present, Past, Future Simple · Exemplos</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-06-08',1)">✓</button>
-</div><div class="day" id="day-2026-06-09">
-<div class="day-name">Ter <span class="dn">09/06</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">SO — Gerenciamento memória</div><div class="day-time">0.5h</div></div><button class="check-btn" onclick="tc('2026-06-12',1,2.5)">✓</button>
+</div><div class="day wknd" id="day-2026-06-13">
+<div class="day-name">Sáb <span class="dn">13/06</span></div>
+<span class="tag t-red">Red</span>
+<div class="day-subj">Estrutura dissertativa</div>
+<div class="day-topic">Introdução · Tese · Como apresentar o problema (+1h extra meta 900+)</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">SO — Sistema de arquivos</div><div class="day-time">1h</div></div><button class="check-btn" onclick="tc('2026-06-13',1,3.5)">✓</button>
+</div><div class="day wknd" id="day-2026-06-14">
+<div class="day-name">Dom <span class="dn">14/06</span></div>
+<span class="tag t-hum">Hum</span>
+<div class="day-subj">Brasil República</div>
+<div class="day-topic">Proclamação → Era Vargas · Linha do tempo</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-06-14',1,3.5)">✓</button>
+</div><div class="day" id="day-2026-06-15">
+<div class="day-name">Seg <span class="dn">15/06</span></div>
 <span class="tag t-rev">Rev</span>
-<div class="day-subj">Revisão da semana</div>
-<div class="day-topic">Refazer 5 questões de Mat · Revisar anotações</div>
-<div class="day-time">16h30–18h30</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Arquitetura — CPU e mem.</div><div class="day-time">19h30–20h10</div></div><button class="check-btn" onclick="tc('2026-06-09',1)">✓</button>
+<div class="day-subj">Revisão Semana 1 (Mat+Red)</div>
+<div class="day-topic">Refazer 5 questões Mat · Revisar Redação da semana</div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Arquitetura — CPU e mem.</div><div class="day-time">0.5h</div></div><button class="check-btn" onclick="tc('2026-06-15',1,2.5)">✓</button>
 </div></div>
 </div><div class="week">
 <div class="week-head">
 <span class="week-title">Semana 2</span>
 <span class="week-prog" id="wp-2">0/7</span>
-<span class="week-dates">Qua 10/Jun → Ter 16/Jun</span>
+<span class="week-dates">Ter 16/Jun → Seg 22/Jun</span>
 </div>
-<div class="days"><div class="day" id="day-2026-06-10">
-<div class="day-name">Qua <span class="dn">10/06</span></div>
+<div class="days"><div class="day" id="day-2026-06-16">
+<div class="day-name">Ter <span class="dn">16/06</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Equações 2º grau</div>
-<div class="day-topic">Bhaskara · Discriminante · Natureza das raízes</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-06-10',2)">✓</button>
-</div><div class="day" id="day-2026-06-11">
-<div class="day-name">Qui <span class="dn">11/06</span></div>
+<div class="day-topic">Bhaskara · Discriminante · Natureza das raízes (+30m base)</div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-06-16',2,2.5)">✓</button>
+</div><div class="day" id="day-2026-06-17">
+<div class="day-name">Qua <span class="dn">17/06</span></div>
 <span class="tag t-port">Port</span>
 <div class="day-subj">Conectivos e coesão</div>
 <div class="day-topic">Mas, portanto, entretanto, embora</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-06-11',2)">✓</button>
-</div><div class="day" id="day-2026-06-12">
-<div class="day-name">Sex <span class="dn">12/06</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-06-17',2,2.5)">✓</button>
+</div><div class="day" id="day-2026-06-18">
+<div class="day-name">Qui <span class="dn">18/06</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Funções do 1º grau</div>
 <div class="day-topic">Gráfico · Coeficientes · Crescente e decrescente</div>
-<div class="day-time">16h30–18h30</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Arquitetura — Barramento I/O</div><div class="day-time">19h30–20h10</div></div><button class="check-btn" onclick="tc('2026-06-12',2)">✓</button>
-</div><div class="day wknd" id="day-2026-06-13">
-<div class="day-name">Sáb <span class="dn">13/06</span></div>
-<span class="tag t-red">Red</span>
-<div class="day-subj">1ª Redação completa</div>
-<div class="day-topic">Tema livre · Cronometrar 1h · Foco na estrutura</div>
-<div class="day-time">09h00–11h00</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Arquitetura — Pipeline cache</div><div class="day-time">11h30–12h10</div></div><button class="check-btn" onclick="tc('2026-06-13',2)">✓</button>
-</div><div class="day wknd" id="day-2026-06-14">
-<div class="day-name">Dom <span class="dn">14/06</span></div>
-<span class="tag t-hum">Hum</span>
-<div class="day-subj">Ditadura e Redemocratização</div>
-<div class="day-topic">1964–1985 · Constituição 88 · Diretas Já</div>
-<div class="day-time">09h00–11h00</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Redes — Modelo OSI TCP/IP</div><div class="day-time">11h30–12h10</div></div><button class="check-btn" onclick="tc('2026-06-14',2)">✓</button>
-</div><div class="day" id="day-2026-06-15">
-<div class="day-name">Seg <span class="dn">15/06</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Arquitetura — Barramento I/O</div><div class="day-time">0.5h</div></div><button class="check-btn" onclick="tc('2026-06-18',2,2.5)">✓</button>
+</div><div class="day" id="day-2026-06-19">
+<div class="day-name">Sex <span class="dn">19/06</span></div>
 <span class="tag t-eng">Eng</span>
 <div class="day-subj">Conditionals</div>
 <div class="day-topic">1st, 2nd e 3rd conditional · Diferença prática</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-06-15',2)">✓</button>
-</div><div class="day" id="day-2026-06-16">
-<div class="day-name">Ter <span class="dn">16/06</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Arquitetura — Pipeline cache</div><div class="day-time">0.5h</div></div><button class="check-btn" onclick="tc('2026-06-19',2,2.5)">✓</button>
+</div><div class="day wknd" id="day-2026-06-20">
+<div class="day-name">Sáb <span class="dn">20/06</span></div>
+<span class="tag t-red">Red</span>
+<div class="day-subj">1ª Redação completa</div>
+<div class="day-topic">Tema livre · Cronometrar 1h · Foco na estrutura (Revisão extra 1h)</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Redes — Modelo OSI TCP/IP</div><div class="day-time">1h</div></div><button class="check-btn" onclick="tc('2026-06-20',2,3.5)">✓</button>
+</div><div class="day wknd" id="day-2026-06-21">
+<div class="day-name">Dom <span class="dn">21/06</span></div>
+<span class="tag t-hum">Hum</span>
+<div class="day-subj">Ditadura e Redemocratização</div>
+<div class="day-topic">1964–1985 · Constituição 88 · Diretas Já</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Redes — HTTP DNS FTP</div><div class="day-time">1h</div></div><button class="check-btn" onclick="tc('2026-06-21',2,3.5)">✓</button>
+</div><div class="day" id="day-2026-06-22">
+<div class="day-name">Seg <span class="dn">22/06</span></div>
 <span class="tag t-rev">Rev</span>
-<div class="day-subj">Revisão semana 2</div>
+<div class="day-subj">Revisão S2 (Mat+Red)</div>
 <div class="day-topic">Rever Bhaskara e funções · D15 do caderno</div>
-<div class="day-time">16h30–18h30</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Redes — HTTP DNS FTP</div><div class="day-time">19h30–20h10</div></div><button class="check-btn" onclick="tc('2026-06-16',2)">✓</button>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-06-22',2,2.5)">✓</button>
 </div></div>
 </div><div class="week">
 <div class="week-head">
 <span class="week-title">Semana 3</span>
 <span class="week-prog" id="wp-3">0/7</span>
-<span class="week-dates">Qua 17/Jun → Ter 23/Jun</span>
+<span class="week-dates">Ter 23/Jun → Seg 29/Jun</span>
 </div>
-<div class="days"><div class="day" id="day-2026-06-17">
-<div class="day-name">Qua <span class="dn">17/06</span></div>
+<div class="days"><div class="day" id="day-2026-06-23">
+<div class="day-name">Ter <span class="dn">23/06</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Funções do 2º grau</div>
 <div class="day-topic">Parábola · Vértice · Máximo e mínimo</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-06-17',3)">✓</button>
-</div><div class="day" id="day-2026-06-18">
-<div class="day-name">Qui <span class="dn">18/06</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-06-23',3,2.5)">✓</button>
+</div><div class="day" id="day-2026-06-24">
+<div class="day-name">Qua <span class="dn">24/06</span></div>
 <span class="tag t-port">Port</span>
 <div class="day-subj">Crase</div>
 <div class="day-topic">Regras fundamentais · Casos de uso e não uso</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-06-18',3)">✓</button>
-</div><div class="day" id="day-2026-06-19">
-<div class="day-name">Sex <span class="dn">19/06</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-06-24',3,2.5)">✓</button>
+</div><div class="day" id="day-2026-06-25">
+<div class="day-name">Qui <span class="dn">25/06</span></div>
 <span class="tag t-nat">Nat</span>
 <div class="day-subj">Física — Cinemática</div>
 <div class="day-topic">MRU · MRUV · Fórmulas · Lançamento vertical</div>
-<div class="day-time">16h30–18h30</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Redes — Roteamento switches</div><div class="day-time">19h30–20h10</div></div><button class="check-btn" onclick="tc('2026-06-19',3)">✓</button>
-</div><div class="day wknd" id="day-2026-06-20">
-<div class="day-name">Sáb <span class="dn">20/06</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Redes — Roteamento switches</div><div class="day-time">0.5h</div></div><button class="check-btn" onclick="tc('2026-06-25',3,2.5)">✓</button>
+</div><div class="day" id="day-2026-06-26">
+<div class="day-name">Sex <span class="dn">26/06</span></div>
+<span class="tag t-nat">Nat</span>
+<div class="day-subj">Química Básica</div>
+<div class="day-topic">Tabela periódica · Ligações químicas · Mol</div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Redes — Segurança básica</div><div class="day-time">0.5h</div></div><button class="check-btn" onclick="tc('2026-06-26',3,2.5)">✓</button>
+</div><div class="day wknd" id="day-2026-06-27">
+<div class="day-name">Sáb <span class="dn">27/06</span></div>
 <span class="tag t-red">Red</span>
 <div class="day-subj">Proposta de intervenção</div>
 <div class="day-topic">Agente · Ação · Modo · Fim · Efeito</div>
-<div class="day-time">09h00–11h00</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Redes — Segurança básica</div><div class="day-time">11h30–12h10</div></div><button class="check-btn" onclick="tc('2026-06-20',3)">✓</button>
-</div><div class="day wknd" id="day-2026-06-21">
-<div class="day-name">Dom <span class="dn">21/06</span></div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Cinemática</div><div class="day-time">1h</div></div><button class="check-btn" onclick="tc('2026-06-27',3,3.5)">✓</button>
+</div><div class="day wknd" id="day-2026-06-28">
+<div class="day-name">Dom <span class="dn">28/06</span></div>
 <span class="tag t-mat">Mat</span>
-<div class="day-subj">10 questões ENEM reais</div>
-<div class="day-topic">Bhaskara + funções · Provas 2019–2023</div>
-<div class="day-time">09h00–11h00</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Cinemática</div><div class="day-time">11h30–12h10</div></div><button class="check-btn" onclick="tc('2026-06-21',3)">✓</button>
-</div><div class="day" id="day-2026-06-22">
-<div class="day-name">Seg <span class="dn">22/06</span></div>
-<span class="tag t-hum">Hum</span>
-<div class="day-subj">Geografia Brasil</div>
-<div class="day-topic">Regiões · Desigualdade regional · Urbanização</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-06-22',3)">✓</button>
-</div><div class="day" id="day-2026-06-23">
-<div class="day-name">Ter <span class="dn">23/06</span></div>
+<div class="day-subj">15 questões ENEM reais</div>
+<div class="day-topic">Bhaskara + funções · Provas antigas (+ 30m análise)</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Dinâmica</div><div class="day-time">1h</div></div><button class="check-btn" onclick="tc('2026-06-28',3,3.5)">✓</button>
+</div><div class="day" id="day-2026-06-29">
+<div class="day-name">Seg <span class="dn">29/06</span></div>
 <span class="tag t-rev">Rev</span>
-<div class="day-subj">Revisão semanas 1–3</div>
-<div class="day-topic">Rever erros · D15 do caderno · Padrões</div>
-<div class="day-time">16h30–18h30</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Dinâmica</div><div class="day-time">19h30–20h10</div></div><button class="check-btn" onclick="tc('2026-06-23',3)">✓</button>
+<div class="day-subj">Revisão S1-S3</div>
+<div class="day-topic">Rever erros Mat · D15 do caderno · Padrões</div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-06-29',3,2.5)">✓</button>
 </div></div>
 </div><div class="week">
 <div class="week-head">
 <span class="week-title">Semana 4</span>
 <span class="week-prog" id="wp-4">0/7</span>
-<span class="week-dates">Qua 24/Jun → Ter 30/Jun</span>
+<span class="week-dates">Ter 30/Jun → Seg 06/Jul</span>
 </div>
-<div class="days"><div class="day" id="day-2026-06-24">
-<div class="day-name">Qua <span class="dn">24/06</span></div>
+<div class="days"><div class="day" id="day-2026-06-30">
+<div class="day-name">Ter <span class="dn">30/06</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Geometria plana</div>
 <div class="day-topic">Área: triângulo, quadrado, círculo · Perímetro</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-06-24',4)">✓</button>
-</div><div class="day" id="day-2026-06-25">
-<div class="day-name">Qui <span class="dn">25/06</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-06-30',4,2.5)">✓</button>
+</div><div class="day" id="day-2026-07-01">
+<div class="day-name">Qua <span class="dn">01/07</span></div>
 <span class="tag t-port">Port</span>
 <div class="day-subj">Concordância verbal</div>
 <div class="day-topic">Casos especiais · Sujeito composto · Coletivos</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-06-25',4)">✓</button>
-</div><div class="day" id="day-2026-06-26">
-<div class="day-name">Sex <span class="dn">26/06</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-01',4,2.5)">✓</button>
+</div><div class="day" id="day-2026-07-02">
+<div class="day-name">Qui <span class="dn">02/07</span></div>
 <span class="tag t-nat">Nat</span>
 <div class="day-subj">Física — Energia</div>
 <div class="day-topic">Trabalho · Energia cinética e potencial</div>
-<div class="day-time">16h30–18h30</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Trabalho energia</div><div class="day-time">19h30–20h10</div></div><button class="check-btn" onclick="tc('2026-06-26',4)">✓</button>
-</div><div class="day wknd" id="day-2026-06-27">
-<div class="day-name">Sáb <span class="dn">27/06</span></div>
-<span class="tag t-red">Red</span>
-<div class="day-subj">Redação completa</div>
-<div class="day-topic">Tema: desigualdade social · 1h cronometrada</div>
-<div class="day-time">09h00–11h00</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Termodinâmica</div><div class="day-time">11h30–12h10</div></div><button class="check-btn" onclick="tc('2026-06-27',4)">✓</button>
-</div><div class="day wknd" id="day-2026-06-28">
-<div class="day-name">Dom <span class="dn">28/06</span></div>
-<span class="tag t-nat">Nat</span>
-<div class="day-subj">Química básica</div>
-<div class="day-topic">Tabela periódica · Ligações químicas · Mol</div>
-<div class="day-time">09h00–11h00</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Eletricidade</div><div class="day-time">11h30–12h10</div></div><button class="check-btn" onclick="tc('2026-06-28',4)">✓</button>
-</div><div class="day" id="day-2026-06-29">
-<div class="day-name">Seg <span class="dn">29/06</span></div>
-<span class="tag t-hum">Hum</span>
-<div class="day-subj">Filosofia e Sociologia</div>
-<div class="day-topic">Iluminismo · Contrato Social · Marx básico</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-06-29',4)">✓</button>
-</div><div class="day" id="day-2026-06-30">
-<div class="day-name">Ter <span class="dn">30/06</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Trab energia</div><div class="day-time">0.5h</div></div><button class="check-btn" onclick="tc('2026-07-02',4,2.5)">✓</button>
+</div><div class="day" id="day-2026-07-03">
+<div class="day-name">Sex <span class="dn">03/07</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Geometria espacial</div>
 <div class="day-topic">Cubo, cilindro, cone, esfera · Volume e área</div>
-<div class="day-time">16h30–18h30</div>
-<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Revisão final</div><div class="day-time">19h30–20h10</div></div><button class="check-btn" onclick="tc('2026-06-30',4)">✓</button>
+<div class="day-time">2.5h (19h30-22h)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Termodinâmica</div><div class="day-time">0.5h</div></div><button class="check-btn" onclick="tc('2026-07-03',4,2.5)">✓</button>
+</div><div class="day wknd" id="day-2026-07-04">
+<div class="day-name">Sáb <span class="dn">04/07</span></div>
+<span class="tag t-red">Red</span>
+<div class="day-subj">Redação completa</div>
+<div class="day-topic">Tema: desigualdade social · 1h cronometrada (+ correções)</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Eletricidade</div><div class="day-time">1h</div></div><button class="check-btn" onclick="tc('2026-07-04',4,3.5)">✓</button>
+</div><div class="day wknd" id="day-2026-07-05">
+<div class="day-name">Dom <span class="dn">05/07</span></div>
+<span class="tag t-hum">Hum</span>
+<div class="day-subj">Filosofia e Sociologia</div>
+<div class="day-topic">Iluminismo · Contrato Social · Marx básico</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<div class="day-cs"><span class="tag t-cs">CS</span><div class="day-topic">Física Geral — Revisão final</div><div class="day-time">1h</div></div><button class="check-btn" onclick="tc('2026-07-05',4,3.5)">✓</button>
+</div><div class="day" id="day-2026-07-06">
+<div class="day-name">Seg <span class="dn">06/07</span></div>
+<span class="tag t-rev">Rev</span>
+<div class="day-subj">Revisão Mat e Red</div>
+<div class="day-topic">Áreas de figuras planas e volumes</div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-06',4,2.5)">✓</button>
 </div></div>
 </div><div class="week">
 <div class="week-head">
 <span class="week-title">Semana 5</span>
 <span class="week-prog" id="wp-5">0/7</span>
-<span class="week-dates">Qua 01/Jul → Ter 07/Jul</span>
+<span class="week-dates">Ter 07/Jul → Seg 13/Jul</span>
 </div>
-<div class="days"><div class="day" id="day-2026-07-01">
-<div class="day-name">Qua <span class="dn">01/07</span></div>
+<div class="days"><div class="day" id="day-2026-07-07">
+<div class="day-name">Ter <span class="dn">07/07</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Trigonometria</div>
 <div class="day-topic">Sen, cos, tan · Triângulo retângulo</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-07-01',5)">✓</button>
-</div><div class="day" id="day-2026-07-02">
-<div class="day-name">Qui <span class="dn">02/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-07',5,2.5)">✓</button>
+</div><div class="day" id="day-2026-07-08">
+<div class="day-name">Qua <span class="dn">08/07</span></div>
 <span class="tag t-port">Port</span>
 <div class="day-subj">Concordância nominal</div>
 <div class="day-topic">Adjetivos · Artigos · Numerais</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-07-02',5)">✓</button>
-</div><div class="day" id="day-2026-07-03">
-<div class="day-name">Sex <span class="dn">03/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-08',5,2.5)">✓</button>
+</div><div class="day" id="day-2026-07-09">
+<div class="day-name">Qui <span class="dn">09/07</span></div>
 <span class="tag t-nat">Nat</span>
 <div class="day-subj">Química — reações</div>
 <div class="day-topic">Ácido-base · Oxidação-redução · pH</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-07-03',5)">✓</button>
-</div><div class="day wknd" id="day-2026-07-04">
-<div class="day-name">Sáb <span class="dn">04/07</span></div>
-<span class="tag t-red">Red</span>
-<div class="day-subj">Redação cronometrada</div>
-<div class="day-topic">Tema social · 1h · Revisar proposta</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-07-04',5)">✓</button>
-</div><div class="day wknd" id="day-2026-07-05">
-<div class="day-name">Dom <span class="dn">05/07</span></div>
-<span class="tag t-hum">Hum</span>
-<div class="day-subj">2ª Guerra Mundial</div>
-<div class="day-topic">Causas · Desenvolvimento · Consequências</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-07-05',5)">✓</button>
-</div><div class="day" id="day-2026-07-06">
-<div class="day-name">Seg <span class="dn">06/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-09',5,2.5)">✓</button>
+</div><div class="day" id="day-2026-07-10">
+<div class="day-name">Sex <span class="dn">10/07</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Probabilidade</div>
 <div class="day-topic">P = favoráveis/totais · Eventos independentes</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-07-06',5)">✓</button>
-</div><div class="day" id="day-2026-07-07">
-<div class="day-name">Ter <span class="dn">07/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-10',5,2.5)">✓</button>
+</div><div class="day wknd" id="day-2026-07-11">
+<div class="day-name">Sáb <span class="dn">11/07</span></div>
+<span class="tag t-red">Red</span>
+<div class="day-subj">Redação cronometrada</div>
+<div class="day-topic">Tema social · 1h · Revisar proposta</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-07-11',5,3.5)">✓</button>
+</div><div class="day wknd" id="day-2026-07-12">
+<div class="day-name">Dom <span class="dn">12/07</span></div>
+<span class="tag t-hum">Hum</span>
+<div class="day-subj">2ª Guerra Mundial</div>
+<div class="day-topic">Causas · Desenvolvimento · Consequências</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-07-12',5,3.5)">✓</button>
+</div><div class="day" id="day-2026-07-13">
+<div class="day-name">Seg <span class="dn">13/07</span></div>
 <span class="tag t-rev">Rev</span>
 <div class="day-subj">Revisão semana 5</div>
-<div class="day-topic">Rever erros · D15 · Planejar S6</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-07-07',5)">✓</button>
+<div class="day-topic">Rever erros Mat · D15 · Planejar S6</div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-13',5,2.5)">✓</button>
 </div></div>
 </div><div class="week">
 <div class="week-head">
 <span class="week-title">Semana 6</span>
 <span class="week-prog" id="wp-6">0/7</span>
-<span class="week-dates">Qua 08/Jul → Ter 14/Jul</span>
+<span class="week-dates">Ter 14/Jul → Seg 20/Jul</span>
 </div>
-<div class="days"><div class="day" id="day-2026-07-08">
-<div class="day-name">Qua <span class="dn">08/07</span></div>
+<div class="days"><div class="day" id="day-2026-07-14">
+<div class="day-name">Ter <span class="dn">14/07</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Análise combinatória</div>
 <div class="day-topic">Permutação · Combinação · Fatorial</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-07-08',6)">✓</button>
-</div><div class="day" id="day-2026-07-09">
-<div class="day-name">Qui <span class="dn">09/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-14',6,2.5)">✓</button>
+</div><div class="day" id="day-2026-07-15">
+<div class="day-name">Qua <span class="dn">15/07</span></div>
 <span class="tag t-port">Port</span>
 <div class="day-subj">Regência verbal</div>
 <div class="day-topic">Verbos com preposição · Casos comuns</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-07-09',6)">✓</button>
-</div><div class="day" id="day-2026-07-10">
-<div class="day-name">Sex <span class="dn">10/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-15',6,2.5)">✓</button>
+</div><div class="day" id="day-2026-07-16">
+<div class="day-name">Qui <span class="dn">16/07</span></div>
 <span class="tag t-nat">Nat</span>
 <div class="day-subj">Biologia — ecologia</div>
 <div class="day-topic">Cadeias alimentares · Biomas brasileiros</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-07-10',6)">✓</button>
-</div><div class="day wknd" id="day-2026-07-11">
-<div class="day-name">Sáb <span class="dn">11/07</span></div>
-<span class="tag t-red">Red</span>
-<div class="day-subj">Redação completa</div>
-<div class="day-topic">Tema: tecnologia e sociedade · 1h</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-07-11',6)">✓</button>
-</div><div class="day wknd" id="day-2026-07-12">
-<div class="day-name">Dom <span class="dn">12/07</span></div>
-<span class="tag t-hum">Hum</span>
-<div class="day-subj">Guerra Fria</div>
-<div class="day-topic">Blocos · Corrida espacial · Fim da URSS</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-07-12',6)">✓</button>
-</div><div class="day" id="day-2026-07-13">
-<div class="day-name">Seg <span class="dn">13/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-16',6,2.5)">✓</button>
+</div><div class="day" id="day-2026-07-17">
+<div class="day-name">Sex <span class="dn">17/07</span></div>
 <span class="tag t-eng">Eng</span>
 <div class="day-subj">Vocabulário contextual</div>
 <div class="day-topic">Inferência por contexto · Cognatos</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-07-13',6)">✓</button>
-</div><div class="day" id="day-2026-07-14">
-<div class="day-name">Ter <span class="dn">14/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-17',6,2.5)">✓</button>
+</div><div class="day wknd" id="day-2026-07-18">
+<div class="day-name">Sáb <span class="dn">18/07</span></div>
+<span class="tag t-red">Red</span>
+<div class="day-subj">Redação completa</div>
+<div class="day-topic">Tema: tecnologia e sociedade · 1h</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-07-18',6,3.5)">✓</button>
+</div><div class="day wknd" id="day-2026-07-19">
+<div class="day-name">Dom <span class="dn">19/07</span></div>
+<span class="tag t-hum">Hum</span>
+<div class="day-subj">Guerra Fria</div>
+<div class="day-topic">Blocos · Corrida espacial · Fim da URSS</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-07-19',6,3.5)">✓</button>
+</div><div class="day" id="day-2026-07-20">
+<div class="day-name">Seg <span class="dn">20/07</span></div>
 <span class="tag t-rev">Rev</span>
 <div class="day-subj">Revisão semana 6</div>
-<div class="day-topic">Erros acumulados · D15 atualizado</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-07-14',6)">✓</button>
+<div class="day-topic">Erros acumulados Análise Comb · D15 atualizado</div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-20',6,2.5)">✓</button>
 </div></div>
 </div><div class="week">
 <div class="week-head">
 <span class="week-title">Semana 7</span>
 <span class="week-prog" id="wp-7">0/7</span>
-<span class="week-dates">Qua 15/Jul → Ter 21/Jul</span>
+<span class="week-dates">Ter 21/Jul → Seg 27/Jul</span>
 </div>
-<div class="days"><div class="day" id="day-2026-07-15">
-<div class="day-name">Qua <span class="dn">15/07</span></div>
+<div class="days"><div class="day" id="day-2026-07-21">
+<div class="day-name">Ter <span class="dn">21/07</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Estatística</div>
 <div class="day-topic">Média · Mediana · Moda · Desvio padrão</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-07-15',7)">✓</button>
-</div><div class="day" id="day-2026-07-16">
-<div class="day-name">Qui <span class="dn">16/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-21',7,2.5)">✓</button>
+</div><div class="day" id="day-2026-07-22">
+<div class="day-name">Qua <span class="dn">22/07</span></div>
 <span class="tag t-port">Port</span>
 <div class="day-subj">Pontuação</div>
 <div class="day-topic">Vírgula · Ponto e vírgula · Dois pontos</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-07-16',7)">✓</button>
-</div><div class="day" id="day-2026-07-17">
-<div class="day-name">Sex <span class="dn">17/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-22',7,2.5)">✓</button>
+</div><div class="day" id="day-2026-07-23">
+<div class="day-name">Qui <span class="dn">23/07</span></div>
 <span class="tag t-nat">Nat</span>
 <div class="day-subj">Física — eletricidade</div>
 <div class="day-topic">Lei de Ohm · Potência elétrica · Circuitos</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-07-17',7)">✓</button>
-</div><div class="day wknd" id="day-2026-07-18">
-<div class="day-name">Sáb <span class="dn">18/07</span></div>
-<span class="tag t-red">Red</span>
-<div class="day-subj">Redação + análise</div>
-<div class="day-topic">Escrever e analisar proposta de intervenção</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-07-18',7)">✓</button>
-</div><div class="day wknd" id="day-2026-07-19">
-<div class="day-name">Dom <span class="dn">19/07</span></div>
-<span class="tag t-hum">Hum</span>
-<div class="day-subj">Globalização</div>
-<div class="day-topic">Blocos econômicos · Neoliberalismo · BRICS</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-07-19',7)">✓</button>
-</div><div class="day" id="day-2026-07-20">
-<div class="day-name">Seg <span class="dn">20/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-23',7,2.5)">✓</button>
+</div><div class="day" id="day-2026-07-24">
+<div class="day-name">Sex <span class="dn">24/07</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Revisão funções</div>
 <div class="day-topic">Rever funções 1º e 2º grau · ENEM reais</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-07-20',7)">✓</button>
-</div><div class="day" id="day-2026-07-21">
-<div class="day-name">Ter <span class="dn">21/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-24',7,2.5)">✓</button>
+</div><div class="day wknd" id="day-2026-07-25">
+<div class="day-name">Sáb <span class="dn">25/07</span></div>
+<span class="tag t-red">Red</span>
+<div class="day-subj">Redação + análise</div>
+<div class="day-topic">Escrever e analisar proposta de intervenção</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-07-25',7,3.5)">✓</button>
+</div><div class="day wknd" id="day-2026-07-26">
+<div class="day-name">Dom <span class="dn">26/07</span></div>
+<span class="tag t-hum">Hum</span>
+<div class="day-subj">Globalização</div>
+<div class="day-topic">Blocos econômicos · Neoliberalismo · BRICS</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-07-26',7,3.5)">✓</button>
+</div><div class="day" id="day-2026-07-27">
+<div class="day-name">Seg <span class="dn">27/07</span></div>
 <span class="tag t-rev">Rev</span>
 <div class="day-subj">Revisão semana 7</div>
 <div class="day-topic">Anotar padrões de erro · D15</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-07-21',7)">✓</button>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-27',7,2.5)">✓</button>
 </div></div>
 </div><div class="week">
 <div class="week-head">
 <span class="week-title">Semana 8 — Simulado Fase 1</span>
 <span class="week-prog" id="wp-8">0/7</span>
-<span class="week-dates">Qua 22/Jul → Ter 28/Jul</span>
+<span class="week-dates">Ter 28/Jul → Seg 03/Ago</span>
 </div>
-<div class="days"><div class="day" id="day-2026-07-22">
-<div class="day-name">Qua <span class="dn">22/07</span></div>
+<div class="days"><div class="day" id="day-2026-07-28">
+<div class="day-name">Ter <span class="dn">28/07</span></div>
 <span class="tag t-sim">Sim</span>
 <div class="day-subj">Simulado Fase 1 — Mat</div>
 <div class="day-topic">15 questões de Matemática · Cronometrar</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-07-22',8)">✓</button>
-</div><div class="day" id="day-2026-07-23">
-<div class="day-name">Qui <span class="dn">23/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-28',8,2.5)">✓</button>
+</div><div class="day" id="day-2026-07-29">
+<div class="day-name">Qua <span class="dn">29/07</span></div>
 <span class="tag t-port">Port</span>
 <div class="day-subj">Simulado Fase 1 — Port</div>
 <div class="day-topic">10 questões de Linguagens</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-07-23',8)">✓</button>
-</div><div class="day" id="day-2026-07-24">
-<div class="day-name">Sex <span class="dn">24/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-29',8,2.5)">✓</button>
+</div><div class="day" id="day-2026-07-30">
+<div class="day-name">Qui <span class="dn">30/07</span></div>
 <span class="tag t-nat">Nat</span>
 <div class="day-subj">Simulado Fase 1 — Nat</div>
 <div class="day-topic">10 questões de Natureza</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-07-24',8)">✓</button>
-</div><div class="day wknd" id="day-2026-07-25">
-<div class="day-name">Sáb <span class="dn">25/07</span></div>
-<span class="tag t-sim">Sim</span>
-<div class="day-subj">Correção do simulado</div>
-<div class="day-topic">Analisar cada erro · Anotar em D15</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-07-25',8)">✓</button>
-</div><div class="day wknd" id="day-2026-07-26">
-<div class="day-name">Dom <span class="dn">26/07</span></div>
-<span class="tag t-hum">Hum</span>
-<div class="day-subj">Atualidades</div>
-<div class="day-topic">Temas sociais recentes · Repertório redação</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-07-26',8)">✓</button>
-</div><div class="day" id="day-2026-07-27">
-<div class="day-name">Seg <span class="dn">27/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-30',8,2.5)">✓</button>
+</div><div class="day" id="day-2026-07-31">
+<div class="day-name">Sex <span class="dn">31/07</span></div>
 <span class="tag t-red">Red</span>
 <div class="day-subj">Redação completa</div>
 <div class="day-topic">Tema de atualidade · Estrutura completa</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-07-27',8)">✓</button>
-</div><div class="day" id="day-2026-07-28">
-<div class="day-name">Ter <span class="dn">28/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-07-31',8,2.5)">✓</button>
+</div><div class="day wknd" id="day-2026-08-01">
+<div class="day-name">Sáb <span class="dn">01/08</span></div>
+<span class="tag t-sim">Sim</span>
+<div class="day-subj">Correção do simulado</div>
+<div class="day-topic">Analisar cada erro Mat · Anotar em D15</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-08-01',8,3.5)">✓</button>
+</div><div class="day wknd" id="day-2026-08-02">
+<div class="day-name">Dom <span class="dn">02/08</span></div>
+<span class="tag t-hum">Hum</span>
+<div class="day-subj">Atualidades</div>
+<div class="day-topic">Temas sociais recentes · Repertório redação</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-08-02',8,3.5)">✓</button>
+</div><div class="day" id="day-2026-08-03">
+<div class="day-name">Seg <span class="dn">03/08</span></div>
 <span class="tag t-rev">Rev</span>
 <div class="day-subj">Fechamento Fase 1</div>
 <div class="day-topic">Revisar tudo · Preparar para Fase 2</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-07-28',8)">✓</button>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-08-03',8,2.5)">✓</button>
 </div></div>
 </div>
 </div>
 </div>
 
 <div class="sec">Cronograma — Fase 2: Conteúdo ENEM (Semanas 9–16)</div>
-<p style="color:var(--muted2);font-size:13px;margin-bottom:16px;">Qua 29/Jul → Ter 29/Set · Temas mais recorrentes · Exercícios com questões reais</p>
+<p style="color:var(--muted2);font-size:13px;margin-bottom:16px;">Ter 04/Ago → Seg 05/Out · Temas mais recorrentes · Exercícios com questões reais</p>
 <div class="phase ph2" id="ph2">
-<div class="phase-head"><span class="phase-badge">Fase 2</span><div><h3>Conteúdo ENEM + Exercícios</h3><p>S9–16 · Qua 29/Jul → Ter 29/Set</p></div></div>
+<div class="phase-head"><span class="phase-badge">Fase 2</span><div><h3>Conteúdo ENEM + Exercícios</h3><p>S9–16 · Ter 04/Ago → Seg 05/Out</p></div></div>
 <div class="phase-prog-bar-wrap"><span class="pp-label">Progresso fase 2</span><div class="pp-bar"><div class="pp-fill" id="ppf2" style="width:0%"></div></div><span class="pp-pct" id="ppp2">0%</span></div>
 <div class="phase-body">
 <div class="week">
 <div class="week-head">
 <span class="week-title">Semanas 9–12 (rep. S9)</span>
 <span class="week-prog" id="wp-9">0/7</span>
-<span class="week-dates">Qua 29/Jul → Ter 04/Ago</span>
+<span class="week-dates">Ter 04/Ago → Seg 10/Ago</span>
 </div>
-<div class="days"><div class="day" id="day-2026-07-29">
-<div class="day-name">Qua <span class="dn">29/07</span></div>
+<div class="days"><div class="day" id="day-2026-08-04">
+<div class="day-name">Ter <span class="dn">04/08</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Progressões PA e PG</div>
 <div class="day-topic">Fórmulas de termo e soma · ENEM reais</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-07-29',9)">✓</button>
-</div><div class="day" id="day-2026-07-30">
-<div class="day-name">Qui <span class="dn">30/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-08-04',9,2.5)">✓</button>
+</div><div class="day" id="day-2026-08-05">
+<div class="day-name">Qua <span class="dn">05/08</span></div>
 <span class="tag t-port">Port</span>
 <div class="day-subj">Figuras de linguagem</div>
 <div class="day-topic">Metáfora · Ironia · Eufemismo · Hipérbole</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-07-30',9)">✓</button>
-</div><div class="day" id="day-2026-07-31">
-<div class="day-name">Sex <span class="dn">31/07</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-08-05',9,2.5)">✓</button>
+</div><div class="day" id="day-2026-08-06">
+<div class="day-name">Qui <span class="dn">06/08</span></div>
 <span class="tag t-nat">Nat</span>
 <div class="day-subj">Biologia — Genética</div>
 <div class="day-topic">DNA · Herança mendeliana · Cruzamentos</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-07-31',9)">✓</button>
-</div><div class="day wknd" id="day-2026-08-01">
-<div class="day-name">Sáb <span class="dn">01/08</span></div>
-<span class="tag t-red">Red</span>
-<div class="day-subj">Redação cronometrada</div>
-<div class="day-topic">1h exata · Tema atual · Revisar proposta</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-08-01',9)">✓</button>
-</div><div class="day wknd" id="day-2026-08-02">
-<div class="day-name">Dom <span class="dn">02/08</span></div>
-<span class="tag t-hum">Hum</span>
-<div class="day-subj">Atualidades geopolítica</div>
-<div class="day-topic">Blocos econômicos · Conflitos globais</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-08-02',9)">✓</button>
-</div><div class="day" id="day-2026-08-03">
-<div class="day-name">Seg <span class="dn">03/08</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-08-06',9,2.5)">✓</button>
+</div><div class="day" id="day-2026-08-07">
+<div class="day-name">Sex <span class="dn">07/08</span></div>
 <span class="tag t-eng">Eng</span>
 <div class="day-subj">Leitura textos reais</div>
 <div class="day-topic">BBC, The Guardian · Inferência</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-08-03',9)">✓</button>
-</div><div class="day" id="day-2026-08-04">
-<div class="day-name">Ter <span class="dn">04/08</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-08-07',9,2.5)">✓</button>
+</div><div class="day wknd" id="day-2026-08-08">
+<div class="day-name">Sáb <span class="dn">08/08</span></div>
+<span class="tag t-red">Red</span>
+<div class="day-subj">Redação cronometrada</div>
+<div class="day-topic">1h exata · Tema atual · Revisar proposta</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-08-08',9,3.5)">✓</button>
+</div><div class="day wknd" id="day-2026-08-09">
+<div class="day-name">Dom <span class="dn">09/08</span></div>
+<span class="tag t-hum">Hum</span>
+<div class="day-subj">Atualidades geopolítica</div>
+<div class="day-topic">Blocos econômicos · Conflitos globais</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-08-09',9,3.5)">✓</button>
+</div><div class="day" id="day-2026-08-10">
+<div class="day-name">Seg <span class="dn">10/08</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">15 questões ENEM reais</div>
 <div class="day-topic">Provas 2020–2024 · Gabarito depois</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-08-04',9)">✓</button>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-08-10',9,2.5)">✓</button>
 </div></div>
 </div><div class="week">
 <div class="week-head">
 <span class="week-title">Semanas 13–16 (rep. S13)</span>
 <span class="week-prog" id="wp-13">0/7</span>
-<span class="week-dates">Qua 26/Ago → Ter 01/Set</span>
+<span class="week-dates">Ter 01/Set → Seg 07/Set</span>
 </div>
-<div class="days"><div class="day" id="day-2026-08-26">
-<div class="day-name">Qua <span class="dn">26/08</span></div>
+<div class="days"><div class="day" id="day-2026-09-01">
+<div class="day-name">Ter <span class="dn">01/09</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Estatística avançada</div>
 <div class="day-topic">Desvio padrão · Tabelas · Gráficos ENEM</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-08-26',13)">✓</button>
-</div><div class="day" id="day-2026-08-27">
-<div class="day-name">Qui <span class="dn">27/08</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-09-01',13,2.5)">✓</button>
+</div><div class="day" id="day-2026-09-02">
+<div class="day-name">Qua <span class="dn">02/09</span></div>
 <span class="tag t-port">Port</span>
 <div class="day-subj">Literatura brasileira</div>
 <div class="day-topic">Modernismo · Realismo · Autores ENEM</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-08-27',13)">✓</button>
-</div><div class="day" id="day-2026-08-28">
-<div class="day-name">Sex <span class="dn">28/08</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-09-02',13,2.5)">✓</button>
+</div><div class="day" id="day-2026-09-03">
+<div class="day-name">Qui <span class="dn">03/09</span></div>
 <span class="tag t-nat">Nat</span>
 <div class="day-subj">Ecologia e meio ambiente</div>
 <div class="day-topic">Biomas · Aquecimento global · Impactos</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-08-28',13)">✓</button>
-</div><div class="day wknd" id="day-2026-08-29">
-<div class="day-name">Sáb <span class="dn">29/08</span></div>
-<span class="tag t-sim">Sim</span>
-<div class="day-subj">Simulado parcial</div>
-<div class="day-topic">20 questões mistas + 1 redação</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-08-29',13)">✓</button>
-</div><div class="day wknd" id="day-2026-08-30">
-<div class="day-name">Dom <span class="dn">30/08</span></div>
-<span class="tag t-nat">Nat</span>
-<div class="day-subj">Física — eletricidade</div>
-<div class="day-topic">Lei de Ohm · Potência · Circuitos</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-08-30',13)">✓</button>
-</div><div class="day" id="day-2026-08-31">
-<div class="day-name">Seg <span class="dn">31/08</span></div>
-<span class="tag t-red">Red</span>
-<div class="day-subj">Repertório sociocultural</div>
-<div class="day-topic">Banco de filósofos e dados estatísticos</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-08-31',13)">✓</button>
-</div><div class="day" id="day-2026-09-01">
-<div class="day-name">Ter <span class="dn">01/09</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-09-03',13,2.5)">✓</button>
+</div><div class="day" id="day-2026-09-04">
+<div class="day-name">Sex <span class="dn">04/09</span></div>
 <span class="tag t-hum">Hum</span>
 <div class="day-subj">História contemporânea</div>
 <div class="day-topic">Neoliberalismo · FHC → Lula → Atualidade</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-09-01',13)">✓</button>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-09-04',13,2.5)">✓</button>
+</div><div class="day wknd" id="day-2026-09-05">
+<div class="day-name">Sáb <span class="dn">05/09</span></div>
+<span class="tag t-sim">Sim</span>
+<div class="day-subj">Simulado parcial</div>
+<div class="day-topic">20 questões Mat + 1 redação</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-09-05',13,3.5)">✓</button>
+</div><div class="day wknd" id="day-2026-09-06">
+<div class="day-name">Dom <span class="dn">06/09</span></div>
+<span class="tag t-nat">Nat</span>
+<div class="day-subj">Física — eletricidade</div>
+<div class="day-topic">Lei de Ohm · Potência · Circuitos</div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-09-06',13,3.5)">✓</button>
+</div><div class="day" id="day-2026-09-07">
+<div class="day-name">Seg <span class="dn">07/09</span></div>
+<span class="tag t-red">Red</span>
+<div class="day-subj">Repertório sociocultural</div>
+<div class="day-topic">Banco de filósofos e dados estatísticos</div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-09-07',13,2.5)">✓</button>
 </div></div>
 </div>
 </div>
 </div>
 
 <div class="sec">Cronograma — Fase 3: Simulados e Reta Final (Semanas 17–23)</div>
-<p style="color:var(--muted2);font-size:13px;margin-bottom:16px;">Qua 30/Set → Sáb 15/Nov · Sem conteúdo novo — só prática e revisão</p>
+<p style="color:var(--muted2);font-size:13px;margin-bottom:16px;">Ter 29/Set → Sáb 15/Nov · Sem conteúdo novo — só prática e revisão</p>
 <div class="phase ph3" id="ph3">
-<div class="phase-head"><span class="phase-badge">Fase 3</span><div><h3>Simulados e Reta Final</h3><p>S17–23 · Qua 30/Set → Sáb 15/Nov</p></div></div>
+<div class="phase-head"><span class="phase-badge">Fase 3</span><div><h3>Simulados e Reta Final</h3><p>S17–23 · Ter 29/Set → Sáb 15/Nov</p></div></div>
 <div class="phase-prog-bar-wrap"><span class="pp-label">Progresso fase 3</span><div class="pp-bar"><div class="pp-fill" id="ppf3" style="width:0%"></div></div><span class="pp-pct" id="ppp3">0%</span></div>
 <div class="phase-body">
 <div class="week">
 <div class="week-head">
 <span class="week-title">Semanas 17–20 (rep. S17)</span>
 <span class="week-prog" id="wp-17">0/7</span>
-<span class="week-dates">Qua 30/Set → Ter 06/Out</span>
+<span class="week-dates">Ter 29/Set → Seg 05/Out</span>
 </div>
-<div class="days"><div class="day" id="day-2026-09-30">
-<div class="day-name">Qua <span class="dn">30/09</span></div>
+<div class="days"><div class="day" id="day-2026-09-29">
+<div class="day-name">Ter <span class="dn">29/09</span></div>
 <span class="tag t-rev">Rev</span>
-<div class="day-subj">Revisão de erros</div>
+<div class="day-subj">Revisão de erros Mat</div>
 <div class="day-topic">Questões erradas do simulado · D15</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-09-30',17)">✓</button>
-</div><div class="day" id="day-2026-10-01">
-<div class="day-name">Qui <span class="dn">01/10</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-09-29',17,2.5)">✓</button>
+</div><div class="day" id="day-2026-09-30">
+<div class="day-name">Qua <span class="dn">30/09</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Reforço pontos fracos</div>
 <div class="day-topic">3 tipos de questão que mais erra</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-10-01',17)">✓</button>
-</div><div class="day" id="day-2026-10-02">
-<div class="day-name">Sex <span class="dn">02/10</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-09-30',17,2.5)">✓</button>
+</div><div class="day" id="day-2026-10-01">
+<div class="day-name">Qui <span class="dn">01/10</span></div>
 <span class="tag t-red">Red</span>
 <div class="day-subj">Redação cronometrada</div>
 <div class="day-topic">Temas últimos 5 anos ENEM</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-10-02',17)">✓</button>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-10-01',17,2.5)">✓</button>
+</div><div class="day" id="day-2026-10-02">
+<div class="day-name">Sex <span class="dn">02/10</span></div>
+<span class="tag t-port">Port</span>
+<div class="day-subj">Revisão de gramática</div>
+<div class="day-topic">Crase · Concordância · Regência</div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-10-02',17,2.5)">✓</button>
 </div><div class="day wknd" id="day-2026-10-03">
 <div class="day-name">Sáb <span class="dn">03/10</span></div>
 <span class="tag t-sim">Sim</span>
 <div class="day-subj">Simulado completo</div>
 <div class="day-topic">Prova ENEM real · Condições reais</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-10-03',17)">✓</button>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-10-03',17,3.5)">✓</button>
 </div><div class="day wknd" id="day-2026-10-04">
 <div class="day-name">Dom <span class="dn">04/10</span></div>
 <span class="tag t-rev">Rev</span>
 <div class="day-subj">Correção do simulado</div>
 <div class="day-topic">Analisar cada erro · Anotar padrões</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-10-04',17)">✓</button>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-10-04',17,3.5)">✓</button>
 </div><div class="day" id="day-2026-10-05">
 <div class="day-name">Seg <span class="dn">05/10</span></div>
-<span class="tag t-port">Port</span>
-<div class="day-subj">Revisão de gramática</div>
-<div class="day-topic">Crase · Concordância · Regência</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-10-05',17)">✓</button>
-</div><div class="day" id="day-2026-10-06">
-<div class="day-name">Ter <span class="dn">06/10</span></div>
 <span class="tag t-hum">Hum</span>
 <div class="day-subj">Revisão de Humanas</div>
 <div class="day-topic">Linha do tempo · Geopolítica · Atualidades</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-10-06',17)">✓</button>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-10-05',17,2.5)">✓</button>
 </div></div>
 </div><div class="week">
 <div class="week-head">
 <span class="week-title">Reta Final — Semanas 21–23</span>
 <span class="week-prog" id="wp-21">—</span>
-<span class="week-dates">Qua 28/Out → Sáb 15/Nov · ENEM!</span>
+<span class="week-dates">Ter 27/Out → Sáb 15/Nov · ENEM!</span>
 </div>
-<div class="days"><div class="day" id="day-2026-10-28">
-<div class="day-name">Qua <span class="dn">28/10</span></div>
+<div class="days"><div class="day" id="day-2026-10-27">
+<div class="day-name">Ter <span class="dn">27/10</span></div>
 <span class="tag t-rev">Rev</span>
 <div class="day-subj">Revisão leve</div>
 <div class="day-topic">Só rever anotações do caderno · Nada novo</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-10-28',21)">✓</button>
-</div><div class="day" id="day-2026-10-29">
-<div class="day-name">Qui <span class="dn">29/10</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-10-27',21,2.5)">✓</button>
+</div><div class="day" id="day-2026-10-28">
+<div class="day-name">Qua <span class="dn">28/10</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Fórmulas-chave</div>
 <div class="day-topic">Bhaskara · Geometria · Física · Prob.</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-10-29',21)">✓</button>
-</div><div class="day" id="day-2026-10-30">
-<div class="day-name">Sex <span class="dn">30/10</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-10-28',21,2.5)">✓</button>
+</div><div class="day" id="day-2026-10-29">
+<div class="day-name">Qui <span class="dn">29/10</span></div>
 <span class="tag t-red">Red</span>
 <div class="day-subj">Reler melhores redações</div>
 <div class="day-topic">Internalizar estrutura · Banco de repertório</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-10-30',21)">✓</button>
-</div><div class="day wknd" id="day-2026-11-01">
-<div class="day-name">Dom <span class="dn">01/11</span></div>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-10-29',21,2.5)">✓</button>
+</div><div class="day wknd" id="day-2026-10-31">
+<div class="day-name">Sáb <span class="dn">31/10</span></div>
 <span class="tag t-sim">Sim</span>
 <div class="day-subj">Simulado final</div>
 <div class="day-topic">Última prova completa · Condições reais</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-11-01',21)">✓</button>
-</div><div class="day wknd" id="day-2026-11-02">
-<div class="day-name">Seg <span class="dn">02/11</span></div>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-10-31',21,3.5)">✓</button>
+</div><div class="day wknd" id="day-2026-11-01">
+<div class="day-name">Dom <span class="dn">01/11</span></div>
 <span class="tag t-rev">Rev</span>
 <div class="day-subj">Correção + descanso</div>
 <div class="day-topic">Corrigir simulado · Dormir cedo</div>
-<div class="day-time">09h00–11h00</div>
-<button class="check-btn" onclick="tc('2026-11-02',21)">✓</button>
+<div class="day-time">3.5h (09h-12h30)</div>
+<button class="check-btn" onclick="tc('2026-11-01',21,3.5)">✓</button>
 </div><div class="day" id="day-2026-11-07">
 <div class="day-name">Sáb <span class="dn">07/11</span></div>
 <span class="tag t-rev">Rev</span>
 <div class="day-subj">Logística da prova</div>
 <div class="day-topic">Confirmar local · Documentos · Dormir cedo</div>
-<div class="day-time">16h30–17h30</div>
-<button class="check-btn" onclick="tc('2026-11-07',22)">✓</button>
+<div class="day-time">1h</div>
+<button class="check-btn" onclick="tc('2026-11-07',22,1.0)">✓</button>
 </div><div class="day" id="day-2026-11-10">
 <div class="day-name">Ter <span class="dn">10/11</span></div>
 <span class="tag t-mat">Mat</span>
 <div class="day-subj">Revisão leve Mat</div>
 <div class="day-topic">Rever fórmulas · Sem pressão</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-11-10',23)">✓</button>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-11-10',23,2.5)">✓</button>
 </div><div class="day" id="day-2026-11-11">
 <div class="day-name">Qua <span class="dn">11/11</span></div>
 <span class="tag t-nat">Nat</span>
 <div class="day-subj">Revisão leve Natureza</div>
 <div class="day-topic">Física e Química · Só reler anotações</div>
-<div class="day-time">16h30–18h30</div>
-<button class="check-btn" onclick="tc('2026-11-11',23)">✓</button>
+<div class="day-time">2.5h (19h30-22h)</div>
+<button class="check-btn" onclick="tc('2026-11-11',23,2.5)">✓</button>
 </div><div class="day" id="day-2026-11-12">
 <div class="day-name">Qui <span class="dn">12/11</span></div>
 <span class="tag t-rev">Rev</span>
 <div class="day-subj">Descanso ativo</div>
 <div class="day-topic">Dormir bem · Alimentação boa</div>
-<div class="day-time">21h00–22h00</div>
-<button class="check-btn" onclick="tc('2026-11-12',23)">✓</button>
+<div class="day-time">1h</div>
+<button class="check-btn" onclick="tc('2026-11-12',23,1.0)">✓</button>
 </div><div class="day enem-day" id="day-2026-11-08">
 <div class="day-name">Sáb <span class="dn">08/11</span></div>
 <span class="tag t-sim">ENEM DIA 1</span>
@@ -1029,24 +1031,23 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 <div class="cs-head"><span class="cs-badge">Faculdade CS</span><div><h3>Ciência da Computação — 1º Semestre</h3><p>Jun–Jul · 40min/sessão · Qua, Sex, Sáb e Dom · Apoio ao curso, não foco principal</p></div></div>
 <div class="cs-body">
 <div class="cs-mat-grid">
-<div class="cs-mat"><h5>Sistemas Operacionais</h5><p>Processos, threads, memória, sistema de arquivos, escalonamento.</p><p style="font-size:10px;color:var(--muted2)"><strong style="color:var(--text)">Fonte:</strong> Neso Academy (YT) · GeeksforGeeks</p><span class="wt">S1–2 · até Ter 16/Jun</span></div>
-<div class="cs-mat"><h5>Arquitetura e Organização</h5><p>CPU, memória, barramento, pipeline, cache, I/O.</p><p style="font-size:10px;color:var(--muted2)"><strong style="color:var(--text)">Fonte:</strong> Rodrigo Penna (YT) · Patterson & Hennessy</p><span class="wt">S3–4 · até Ter 30/Jun</span></div>
-<div class="cs-mat"><h5>Redes de Computadores</h5><p>OSI, TCP/IP, HTTP/DNS/FTP, roteamento, segurança básica.</p><p style="font-size:10px;color:var(--muted2)"><strong style="color:var(--text)">Fonte:</strong> Curso em Vídeo — Redes · Computerphile</p><span class="wt">S5–6 · até Ter 14/Jul</span></div>
-<div class="cs-mat"><h5>Física Geral</h5><p>Cinemática, dinâmica, energia, termodinâmica, eletricidade. Coincide com ENEM!</p><p style="font-size:10px;color:var(--muted2)"><strong style="color:var(--text)">Fonte:</strong> Khan Academy Física · Física e Vestibular</p><span class="wt">S7–8 · até Ter 28/Jul</span></div>
+<div class="cs-mat"><h5>Sistemas Operacionais</h5><p>Processos, threads, memória, sistema de arquivos, escalonamento.</p><p style="font-size:10px;color:var(--muted2)"><strong style="color:var(--text)">Fonte:</strong> Neso Academy (YT) · GeeksforGeeks</p><span class="wt">S1–2 · até Seg 22/Jun</span></div>
+<div class="cs-mat"><h5>Arquitetura e Organização</h5><p>CPU, memória, barramento, pipeline, cache, I/O.</p><p style="font-size:10px;color:var(--muted2)"><strong style="color:var(--text)">Fonte:</strong> Rodrigo Penna (YT) · Patterson & Hennessy</p><span class="wt">S3–4 · até Seg 06/Jul</span></div>
+<div class="cs-mat"><h5>Redes de Computadores</h5><p>OSI, TCP/IP, HTTP/DNS/FTP, roteamento, segurança básica.</p><p style="font-size:10px;color:var(--muted2)"><strong style="color:var(--text)">Fonte:</strong> Curso em Vídeo — Redes · Computerphile</p><span class="wt">S5–6 · até Seg 20/Jul</span></div>
+<div class="cs-mat"><h5>Física Geral</h5><p>Cinemática, dinâmica, energia, termodinâmica, eletricidade. Coincide com ENEM!</p><p style="font-size:10px;color:var(--muted2)"><strong style="color:var(--text)">Fonte:</strong> Khan Academy Física · Física e Vestibular</p><span class="wt">S7–8 · até Seg 03/Ago</span></div>
 </div>
 <div style="margin-top:12px;padding:12px 15px;background:rgba(251,146,60,.05);border:1px solid rgba(251,146,60,.15);border-radius:10px;font-size:12px;color:var(--muted2);line-height:1.6;"><strong style="color:var(--orange)">Nota:</strong> Física Geral da faculdade se sobrepõe diretamente ao Natureza do ENEM. Use o mesmo material — não estude em separado.</div>
 </div>
 </div>
 
-<div class="alert-box"><strong>Aviso real:</strong> Este plano funciona se você cumprir pelo menos 75% das semanas. Semanas perdidas são normais — o problema é abandonar por 2–3 semanas seguidas. Se isso acontecer, não recomece do zero: pegue de onde parou. A D15 do caderno é seu material mais valioso na reta final.</div>
+<div class="alert-box"><strong>Aviso real:</strong> A cota EP-L1 traz uma oportunidade imensa, mas a margem de segurança de 760+ não perdoa falhas na base. Se acumular atrasos, não recomece: pegue do ponto em que parou e recupere o tempo nos finais de semana focando puramente em Matemática.</div>
 
 </div>
-<div class="footer">Plano: 02/06/2026 · Início: Qua 03/06/2026 · ENEM: Sáb 08 e Sáb 15/11/2026 · Meta: 720+ · Cota L2 · SI EACH USP</div>
+<div class="footer">Plano: 08/06/2026 · Início: Ter 09/06/2026 · ENEM: Sáb 08 e Sáb 15/11/2026 · Meta: 760+ · Cota EP-L1 · SI EACH USP</div>
 
 <script>
-const SK = 'enem2026_v2';
+const SK = 'enem2026_epL1_horas_v2';
 let CK = {};
-const ALL_DATES = ["2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26", "2026-06-27", "2026-06-28", "2026-06-29", "2026-06-30", "2026-07-01", "2026-07-02", "2026-07-03", "2026-07-04", "2026-07-05", "2026-07-06", "2026-07-07", "2026-07-08", "2026-07-09", "2026-07-10", "2026-07-11", "2026-07-12", "2026-07-13", "2026-07-14", "2026-07-15", "2026-07-16", "2026-07-17", "2026-07-18", "2026-07-19", "2026-07-20", "2026-07-21", "2026-07-22", "2026-07-23", "2026-07-24", "2026-07-25", "2026-07-26", "2026-07-27", "2026-07-28", "2026-07-29", "2026-07-30", "2026-07-31", "2026-08-01", "2026-08-02", "2026-08-03", "2026-08-04", "2026-08-26", "2026-08-27", "2026-08-28", "2026-08-29", "2026-08-30", "2026-08-31", "2026-09-01", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-28", "2026-10-29", "2026-10-30", "2026-11-01", "2026-11-02", "2026-11-07", "2026-11-10", "2026-11-11", "2026-11-12"];
 
 function load(){
   try{ const r = localStorage.getItem(SK); CK = r ? JSON.parse(r) : {}; }catch(e){CK={};}
@@ -1064,15 +1065,18 @@ function isOnTime(dateStr, ts){
 
 function isPast(dateStr){ return dateStr < today(); }
 
-function tc(dateStr, wk){
+function tc(dateStr, wk, hours){
   if(CK[dateStr]) delete CK[dateStr];
-  else CK[dateStr] = {ts: Date.now(), w: wk};
+  else CK[dateStr] = {ts: Date.now(), w: wk, h: hours};
   save(); updateUI();
 }
 
 function updateUI(){
-  let total=0, done=0, onTime=0, late=0, pending=0;
+  let total=0, done=0, onTime=0, late=0, pending=0, totalHours=0;
   let ph1d=[], ph2d=[], ph3d=[];
+  
+  // Extrai as datas dinamicamente do DOM para nunca falhar uma referência
+  const ALL_DATES = Array.from(document.querySelectorAll('.day[id^="day-"]')).map(el => el.id.replace('day-', ''));
 
   ALL_DATES.forEach(ds => {
     const el = document.getElementById('day-'+ds);
@@ -1080,13 +1084,14 @@ function updateUI(){
     const btn = el.querySelector('.check-btn');
     if(!btn) return;
     total++;
-    if(ds <= '2026-07-28') ph1d.push(ds);
-    else if(ds <= '2026-09-29') ph2d.push(ds);
+    if(ds <= '2026-08-03') ph1d.push(ds);
+    else if(ds <= '2026-09-07') ph2d.push(ds);
     else ph3d.push(ds);
     const ob = el.querySelector('.cbadge');
     if(ob) ob.remove();
     if(CK[ds]){
       done++;
+      totalHours += CK[ds].h || 0;
       const ot = isOnTime(ds, CK[ds].ts);
       if(ot){
         onTime++; btn.className='check-btn c-ok'; btn.textContent='✓';
@@ -1106,6 +1111,7 @@ function updateUI(){
 
   const pct = total>0 ? Math.round(done/total*100) : 0;
   document.getElementById('st-done').textContent = done;
+  document.getElementById('st-hours').textContent = totalHours.toFixed(1) + 'h';
   document.getElementById('st-pct').textContent = pct+'%';
   document.getElementById('st-on').textContent = onTime;
   document.getElementById('st-late').textContent = late;
@@ -1139,20 +1145,6 @@ function updateUI(){
   phProg(ph1d,'ppf1','ppp1');
   phProg(ph2d,'ppf2','ppp2');
   phProg(ph3d,'ppf3','ppp3');
-
-  // week progress
-  const weekMap = {};
-  ALL_DATES.forEach(ds=>{
-    if(!CK[ds]) return;
-    const entry_week = CK[ds].w;
-    if(!weekMap[entry_week]) weekMap[entry_week]={done:0,total:0};
-    weekMap[entry_week].done++;
-  });
-  ALL_DATES.forEach(ds=>{
-    const el2 = document.getElementById('day-'+ds);
-    if(!el2) return;
-    // just count per week from ALL_DATES
-  });
 }
 
 load(); updateUI();
